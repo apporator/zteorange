@@ -1,0 +1,19 @@
+Usage: echo [OPTIONS] > /proc/tm/shell 
+example -f sym p1,p2,p3 
+        sym=1, set sym to 1 
+        sym, get sym value 
+Options:
+  -b,         data is byte
+  -w,         data is word , 2 bytes
+  -l,         data is dword , 4 bytes
+  -f,         data is function with check
+  -F,         data is function ,no check
+  -c,         data counts
+  -a,         get sym address
+  -s,         translate address to sym name
+  -d,         data base is dec, default is hex
+  -p,         pid, dec mode
+  -P,         pid's full path
+  -t,         vaddr to paddr
+  -h,         help
+

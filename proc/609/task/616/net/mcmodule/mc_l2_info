@@ -1,0 +1,225 @@
+-----------------------Global Param-----------------------------
+Igmpsnp          = 1
+Igmpproxy        = 0
+IgmpsnpAgTime       = 360
+IgmpV1En         = 1
+IgmpV2En         = 1
+IgmpV3En         = 1
+IfIgmpMtoU       = 1
+IfIgmpQryMtoU    = 1
+IfIgmpSendQry    = 0
+Igmpqueryversion = 2
+AllLeaveEnable   = 0
+Mldsnp           = 1
+Mldproxy         = 0
+MldsnpAgTime       = 360
+IfMldMtoU        = 1
+IfMldQryMtoU     = 1
+MldV1En          = 1
+MldV2En          = 1
+IfMldSendQry     = 0
+LeaveMode        = 0
+NonFastType      = 1
+AddMacVlanMode   = 0
+QueryInterval    = 1
+QueryCount       = 1
+Flood            = 0
+CTCMode          = 0
+SntpSynFlag      = 0
+DynGrpCyCle      = 86400
+----------------------------------------------------------------
+-----------------------Sepcial Group List-----------------------
+Group                        Mode    PortName
+----------------------------------------------------------------
+-------------------------Port Param-----------------------------
+PortName           = eth0
+PortEn             = 1
+TagStripe          = 0
+TrapUnKnowReportEn = 0
+MaxAddrNum         = 1024
+MaxBandWidth       = 0
+AllBandWidth       = 0
+AllNodeNow         = 0
+IgmpBandWidthNow   = 0
+IgmpNodeNow        = 0
+MldBandWidthNow    = 0
+MldNodeNow         = 0
+------------------------Port IGMPFDB----------------------------
+------------------------Port MLDFDB-----------------------------
+----------------------------------------------------------------
+-------------------------Port Param-----------------------------
+PortName           = eth1
+PortEn             = 1
+TagStripe          = 0
+TrapUnKnowReportEn = 0
+MaxAddrNum         = 1024
+MaxBandWidth       = 0
+AllBandWidth       = 0
+AllNodeNow         = 0
+IgmpBandWidthNow   = 0
+IgmpNodeNow        = 0
+MldBandWidthNow    = 0
+MldNodeNow         = 0
+------------------------Port IGMPFDB----------------------------
+------------------------Port MLDFDB-----------------------------
+----------------------------------------------------------------
+-------------------------Port Param-----------------------------
+PortName           = eth2
+PortEn             = 1
+TagStripe          = 0
+TrapUnKnowReportEn = 0
+MaxAddrNum         = 1024
+MaxBandWidth       = 0
+AllBandWidth       = 0
+AllNodeNow         = 0
+IgmpBandWidthNow   = 0
+IgmpNodeNow        = 0
+MldBandWidthNow    = 0
+MldNodeNow         = 0
+------------------------Port IGMPFDB----------------------------
+------------------------Port MLDFDB-----------------------------
+----------------------------------------------------------------
+-------------------------Port Param-----------------------------
+PortName           = eth3
+PortEn             = 1
+TagStripe          = 0
+TrapUnKnowReportEn = 0
+MaxAddrNum         = 1024
+MaxBandWidth       = 0
+AllBandWidth       = 0
+AllNodeNow         = 0
+IgmpBandWidthNow   = 0
+IgmpNodeNow        = 0
+MldBandWidthNow    = 0
+MldNodeNow         = 0
+------------------------Port IGMPFDB----------------------------
+------------------------Port MLDFDB-----------------------------
+----------------------------------------------------------------
+-------------------------Port Param-----------------------------
+PortName           = wlan0
+PortEn             = 1
+TagStripe          = 0
+TrapUnKnowReportEn = 0
+MaxAddrNum         = 1024
+MaxBandWidth       = 0
+AllBandWidth       = 0
+AllNodeNow         = 0
+IgmpBandWidthNow   = 0
+IgmpNodeNow        = 0
+MldBandWidthNow    = 0
+MldNodeNow         = 0
+------------------------Port IGMPFDB----------------------------
+------------------------Port MLDFDB-----------------------------
+----------------------------------------------------------------
+-------------------------Port Param-----------------------------
+PortName           = wlan1
+PortEn             = 1
+TagStripe          = 0
+TrapUnKnowReportEn = 0
+MaxAddrNum         = 256
+MaxBandWidth       = 0
+AllBandWidth       = 0
+AllNodeNow         = 0
+IgmpBandWidthNow   = 0
+IgmpNodeNow        = 0
+MldBandWidthNow    = 0
+MldNodeNow         = 0
+------------------------Port IGMPFDB----------------------------
+------------------------Port MLDFDB-----------------------------
+----------------------------------------------------------------
+-------------------------Port Param-----------------------------
+PortName           = wlan2
+PortEn             = 1
+TagStripe          = 0
+TrapUnKnowReportEn = 0
+MaxAddrNum         = 256
+MaxBandWidth       = 0
+AllBandWidth       = 0
+AllNodeNow         = 0
+IgmpBandWidthNow   = 0
+IgmpNodeNow        = 0
+MldBandWidthNow    = 0
+MldNodeNow         = 0
+------------------------Port IGMPFDB----------------------------
+------------------------Port MLDFDB-----------------------------
+----------------------------------------------------------------
+-------------------------Port Param-----------------------------
+PortName           = wlan3
+PortEn             = 1
+TagStripe          = 0
+TrapUnKnowReportEn = 0
+MaxAddrNum         = 256
+MaxBandWidth       = 0
+AllBandWidth       = 0
+AllNodeNow         = 0
+IgmpBandWidthNow   = 0
+IgmpNodeNow        = 0
+MldBandWidthNow    = 0
+MldNodeNow         = 0
+------------------------Port IGMPFDB----------------------------
+------------------------Port MLDFDB-----------------------------
+----------------------------------------------------------------
+-------------------------Port Param-----------------------------
+PortName           = wlan4
+PortEn             = 1
+TagStripe          = 0
+TrapUnKnowReportEn = 0
+MaxAddrNum         = 1024
+MaxBandWidth       = 0
+AllBandWidth       = 0
+AllNodeNow         = 0
+IgmpBandWidthNow   = 0
+IgmpNodeNow        = 0
+MldBandWidthNow    = 0
+MldNodeNow         = 0
+------------------------Port IGMPFDB----------------------------
+------------------------Port MLDFDB-----------------------------
+----------------------------------------------------------------
+-------------------------Port Param-----------------------------
+PortName           = wlan5
+PortEn             = 1
+TagStripe          = 0
+TrapUnKnowReportEn = 0
+MaxAddrNum         = 256
+MaxBandWidth       = 0
+AllBandWidth       = 0
+AllNodeNow         = 0
+IgmpBandWidthNow   = 0
+IgmpNodeNow        = 0
+MldBandWidthNow    = 0
+MldNodeNow         = 0
+------------------------Port IGMPFDB----------------------------
+------------------------Port MLDFDB-----------------------------
+----------------------------------------------------------------
+-------------------------Port Param-----------------------------
+PortName           = wlan6
+PortEn             = 1
+TagStripe          = 0
+TrapUnKnowReportEn = 0
+MaxAddrNum         = 256
+MaxBandWidth       = 0
+AllBandWidth       = 0
+AllNodeNow         = 0
+IgmpBandWidthNow   = 0
+IgmpNodeNow        = 0
+MldBandWidthNow    = 0
+MldNodeNow         = 0
+------------------------Port IGMPFDB----------------------------
+------------------------Port MLDFDB-----------------------------
+----------------------------------------------------------------
+-------------------------Port Param-----------------------------
+PortName           = wlan7
+PortEn             = 1
+TagStripe          = 0
+TrapUnKnowReportEn = 0
+MaxAddrNum         = 1024
+MaxBandWidth       = 0
+AllBandWidth       = 0
+AllNodeNow         = 0
+IgmpBandWidthNow   = 0
+IgmpNodeNow        = 0
+MldBandWidthNow    = 0
+MldNodeNow         = 0
+------------------------Port IGMPFDB----------------------------
+------------------------Port MLDFDB-----------------------------
+----------------------------------------------------------------

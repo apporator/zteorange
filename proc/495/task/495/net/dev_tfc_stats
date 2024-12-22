@@ -1,0 +1,9 @@
+traffic stats information:
+
+-------------------------------------
+Inter-|   Receive                 |  Transmit
+ face |broadcast multicast unicast|broadcast multicast unicast
+  pon0         0         0       0         0         0       0
+ nbif0         0         0       0         0         0       0
+ nbif1         0         0       0         0         0       0
+ nbif2         0         0       0         0         0       0

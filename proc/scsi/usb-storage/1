@@ -1,0 +1,7 @@
+   Host scsi1: usb-storage
+       Vendor: Generic
+      Product: Mass Storage Device
+Serial Number: 121220160204
+     Protocol: Transparent SCSI
+    Transport: Bulk
+       Quirks:

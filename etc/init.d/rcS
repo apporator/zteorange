@@ -1,0 +1,245 @@
+#!/bin/sh
+#	$Id: rcS,v 1.7 2007/10/25 21:58:06 jwessel Exp $
+# This is a minmal rcS file for target startup
+# Make sure that /proc is mounted.
+mount -a
+
+#
+#	Assign an address to the loopback device.
+#
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+runlevel=S
+prevlevel=N
+umask 022
+export PATH runlevel prevlevel
+# load patch module first
+insmod /kmodule/patch.ko
+
+#
+#	Source defaults.
+#
+. /etc/default/rcS
+export VERBOSE
+
+. /etc/default/S00tagparam
+
+#
+#	Trap CTRL-C &c only in this shell so we can interrupt subprocesses.
+#
+trap ":" INT QUIT TSTP
+
+#
+#	check and mount /userconfig
+#
+. /etc/default/S01userconfig
+
+#
+# check and mount /usercustom
+#
+. /etc/default/S03usercustom
+
+#
+# The international version is prohibited to start on the domestic board added by yy10190247
+#
+if [ -f /userconfig/sctypech ]; then
+	echo "ERROR: Indocontrol Error 1"	
+fi
+# end by yy10190247
+if [ ! -f /userconfig/sctypech ]; then
+#
+#	Call all parts in order.
+#
+for i in /etc/rcS.d/S??*
+do
+	# Ignore dangling symlinks for now.
+	[ ! -f "$i" ] && continue
+
+	case "$i" in
+		*.sh)
+			# Source shell script for speed.
+			(
+				trap - INT QUIT TSTP
+				set start
+				. $i
+			)
+			;;
+		*)
+			# No sh extension, so fork subprocess.
+			$i start
+
+			;;
+	esac
+done
+fi
+
+#
+# Create log flag file
+#
+if [ ! -f /userconfig/cfg/flag_usrfs ]; then
+	echo `ls -l /userconfig/`  
+	echo `date` > /userconfig/cfg/flag_usrfs
+fi
+
+#
+# Resume default configuration file
+# 0 - Default, 1 - Russia, 2 - Lithuania, 3 - Romania, 4 - Singapore
+#
+USR_DB_CFG_TYPE_MAX=300
+USR_DB_DEFAULT_CFG_XML=/userconfig/cfg/db_default_cfg.xml
+USR_DB_USER_CFG_XML=/userconfig/cfg/db_user_cfg.xml
+USR_DB_BACKUP_CFG_XML=/userconfig/cfg/db_backup_cfg.xml
+USR_CFG_TYPE_FILE=/userconfig/flag_type
+
+### 国家码
+ETC_DB_DEFAULT_CFG_XML=/etc/db_default_cfg.xml
+ETC_DB_RUSSIA_CFG_XML=/etc/db_default_Russia_cfg.xml
+ETC_DB_LITHUANIA_CFG_XML=/etc/db_default_Lithuania_cfg.xml
+ETC_DB_ROMANIA_CFG_XML=/etc/db_default_Romania_cfg.xml
+ETC_DB_SINGAPORE_CFG_XML=/etc/db_default_Singapore_cfg.xml
+ETC_DB_MANUFACTURE_CFG_XML=/etc/db_default_Manufacture_cfg.xml
+
+### 地区码, 江苏、新疆、海南电信、四川、湖北、上海、重庆、北京、安徽、山东、广东
+ETC_DB_JIANGSU_CFG_XML=/etc/db_default_Jiangsu_cfg.xml
+ETC_DB_XINJIANG_CFG_XML=/etc/db_default_Xinjiang_cfg.xml
+ETC_DB_HAINANDIANXIN_CFG_XML=/etc/db_default_Hainandianxin_cfg.xml
+ETC_DB_SICHUAN_CFG_XML=/etc/db_default_Sichuan_cfg.xml
+ETC_DB_HUBEI_CFG_XML=/etc/db_default_Hubei_cfg.xml
+ETC_DB_SHANGHAI_CFG_XML=/etc/db_default_Shanghai_cfg.xml
+ETC_DB_CHONGQING_CFG_XML=/etc/db_default_Chongqing_cfg.xml
+ETC_DB_BEIJING_CFG_XML=/etc/db_default_Beijing_cfg.xml
+ETC_DB_ANHUI_CFG_XML=/etc/db_default_Anhui_cfg.xml
+ETC_DB_SHANDONG_CFG_XML=/etc/db_default_Shandong_cfg.xml
+ETC_DB_GUANGDONG_CFG_XML=/etc/db_default_Guangdong_cfg.xml
+ETC_DB_SUZHOU_CFG_XML=/etc/db_default_Suzhou_cfg.xml
+
+ETC_DB_GUIZHOU_CFG_XML=/etc/db_default_Guizhou_cfg.xml
+ETC_DB_SHANXI2_CFG_XML=/etc/db_default_Shanxi2_cfg.xml
+ETC_DB_HEBEI_CFG_XML=/etc/db_default_Hebei_cfg.xml
+ETC_DB_NINGXIA_CFG_XML=/etc/db_default_Ningxia_cfg.xml
+ETC_DB_GUANGXI_CFG_XML=/etc/db_default_Guangxi_cfg.xml
+ETC_DB_JIANGXI_CFG_XML=/etc/db_default_Jiangxi_cfg.xml
+ETC_DB_GANSU_CFG_XML=/etc/db_default_Gansu_cfg.xml
+ETC_DB_QINGHAI_CFG_XML=/etc/db_default_Qinghai_cfg.xml
+ETC_DB_XIAN_CFG_XML=/etc/db_default_Xian_cfg.xml
+ETC_DB_LIAONING_CFG_XML=/etc/db_default_Liaoning_cfg.xml
+ETC_DB_JILIN_CFG_XML=/etc/db_default_Jilin_cfg.xml
+ETC_DB_NEIMENG_CFG_XML=/etc/db_default_Neimeng_cfg.xml
+ETC_DB_HENAN_CFG_XML=/etc/db_default_Henan_cfg.xml
+
+ETC_DB_SHANXI_CFG_XML=/etc/db_default_Shanxi_cfg.xml
+ETC_DB_TIANJIN_CFG_XML=/etc/db_default_Tianjin_cfg.xml
+ETC_DB_FUJIAN_CFG_XML=/etc/db_default_Fujian_cfg.xml
+ETC_DB_ZHEJIANG_CFG_XML=/etc/db_default_Zhejiang_cfg.xml
+ETC_DB_YUNNAN_CFG_XML=/etc/db_default_Yunnan_cfg.xml
+ETC_DB_XIZANG_CFG_XML=/etc/db_default_Xizang_cfg.xml
+ETC_DB_HEILONGJIANG_CFG_XML=/etc/db_default_Heilongjiang_cfg.xml
+ETC_DB_HAINANDIANXIN_CFG_XML=/etc/db_default_Hainandianxin_cfg.xml
+
+ETC_DB_REGIONCODE=/etc/init.d/regioncode
+
+ERR_REGIONCODE_RECORD=/userconfig/regioncode_record
+ERR_REGIONCODE_MAX=40960
+
+
+err_REGIONCODE() {
+
+	if [ -f "$ERR_REGIONCODE_RECORD" ]; then
+	
+		filesize=`ls -l $ERR_REGIONCODE_RECORD | awk '{print $5}'`
+		if [ ${filesize} -gt $ERR_REGIONCODE_MAX ]; then
+			echo "  Warning: size: ${filesize} > max: $ERR_REGIONCODE_MAX unsupported, rerecord" > $ERR_REGIONCODE_RECORD
+		fi
+	fi
+	if [ $1 -eq 1 ]; then
+		echo "  Warning: $2 unsupported!! ETC_CFG not exist!" >> $ERR_REGIONCODE_RECORD
+	fi
+	if [ $1 -eq 2 ]; then
+		echo "  Warning: $2 unsupported!! out of bounds!" >> $ERR_REGIONCODE_RECORD
+	fi
+	if [ $1 -eq 3 ]; then
+		echo "  Warning: $2 unsupported!! cat $USR_CFG_TYPE_FILE failed!" >> $ERR_REGIONCODE_RECORD
+	fi
+	if [ $1 -eq 4 ]; then
+		echo "  Warning: using $2 setting" >> $ERR_REGIONCODE_RECORD
+	fi
+	if [ $1 -eq 5 ]; then
+		echo "  Warning: using $3 setting failed($2: 1 open failed; 2 write failed )!!!!,redo" >> $ERR_REGIONCODE_RECORD
+	fi
+}
+
+if [ ! -f $USR_CFG_TYPE_FILE ]; then
+	upgradetest sfactoryconf 198
+	iret=$?
+	if [ $iret = "0" ]; then
+		err_REGIONCODE 4 198
+	else
+		err_REGIONCODE 5 $iret 198
+		upgradetest sfactoryconf 198	 
+	fi
+fi
+
+USR_CFG_SOFT_TYPE=$(cat /proc/csp/softVersion)
+idx=`cat $USR_CFG_TYPE_FILE | grep 'current' | sed -e 's/^current \: /\1/'`
+if [ $idx -ne 198 ]; then
+	if [ $idx -ne 185 ] && [ ${USR_CFG_SOFT_TYPE} == "ZTEGF680601BF" ]; then
+		upgradetest sfactoryconf 185
+		iret=$?
+		if [ $iret = "0" ]; then
+			err_REGIONCODE 4 185
+		else
+			err_REGIONCODE 5 $iret 185
+			upgradetest sfactoryconf 185
+		fi
+		rm -f $USR_DB_USER_CFG_XML $USR_DB_BACKUP_CFG_XML
+	fi
+fi
+echo "  Database default setting is [`cat $USR_CFG_TYPE_FILE`]"
+
+#
+# copy some files to /var/tmp/linux-igd, used by UPNP and SNTP
+#
+mkdir -p /var/tmp/linux-igd
+cp -f  /etc/gatedesc.skl     /var/tmp/linux-igd/gatedesc.skl
+cp -f  /etc/gateinfoSCPD.xml /var/tmp/linux-igd/gateinfoSCPD.xml
+cp -f  /etc/gateicfgSCPD.xml /var/tmp/linux-igd/gateicfgSCPD.xml
+cp -f  /etc/gateconnSCPD.xml /var/tmp/linux-igd/gateconnSCPD.xml
+
+#
+# auto-start cspd
+# modified by zhouyongbo to bind wifi/idm interrupts both in cpu 0
+echo 1 > /proc/irq/24/smp_affinity
+
+if [ -f /userconfig/ttyredir.cfg ]; 
+then
+	iParm=$(cat /userconfig/ttyredir.cfg)
+	echo "open tty redir to file (Type:$iParm)"
+	redir -l 10 -f $iParm &
+	rm -rf /userconfig/ttyredir.cfg
+fi
+
+echo "check for kasan"
+supportkasanstr=`grep __asan_register_globals /proc/kallsyms`
+echo "supportkasanstr=${supportkasanstr}"
+if [ x != x"${supportkasanstr}" ];then
+    echo "support_kasan_str=${supportkasanstr}"
+    echo watchdog=disable > /proc/watchdog/ctrl
+else
+    echo "not_support_kasan"
+fi
+
+echo "check for kmemleak"
+supportkmemleakstr=`grep kmemleak_scan_thread /proc/kallsyms`
+if [ x != x"${supportkmemleakstr}" ];then
+    mount -t debugfs nodev /sys/kernel/debug
+fi
+
+
+
+if [ ! -f /userconfig/sctypech ]; then
+pc&
+fi
+
+#
+# hostname
+#
+hostname -F /proc/csp/boardtype

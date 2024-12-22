@@ -1,0 +1,13 @@
+systools:v0.7.0
+cl------close thread monitor, [echo cl] 
+ck------set check by pid, [echo ck pid action] 
+si------force sig to pid, [echo sig pid] 
+bt------show backtrace by pid, [echo bt pid] 
+i------show interrupts statistics
+c------show show_cpuload
+m------show memory usage
+t------show task states
+b------system reboot
+a------show all task backtrace
+l------show backtrace
+h------show-systools-helpmsg

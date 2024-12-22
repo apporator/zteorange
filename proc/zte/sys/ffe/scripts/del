@@ -1,0 +1,5 @@
+#! /bin/sh
+
+# usage:del flows
+
+echo del $1 > /proc/zte/sys/ffe/cmd

@@ -1,0 +1,5 @@
+OF_NAME=timer
+OF_FULLNAME=/soc/timer@00800200
+OF_COMPATIBLE_0=arm,cortex-a9-global-timer
+OF_COMPATIBLE_N=1
+MODALIAS=of:NtimerT<NULL>Carm,cortex-a9-global-timer

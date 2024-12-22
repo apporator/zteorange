@@ -1,0 +1,4 @@
+clock:400000000
+heartbeat:8
+wdt_state:1
+watchdog_lastfeed_tick:0x220f7

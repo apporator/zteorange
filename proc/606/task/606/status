@@ -1,0 +1,39 @@
+Name:	pc
+State:	S (sleeping)
+Tgid:	606
+Ngid:	0
+Pid:	606
+PPid:	1
+TracerPid:	0
+Uid:	0	0	0	0
+Gid:	0	0	0	0
+FDSize:	32
+Groups:	
+VmPeak:	    2156 kB
+VmSize:	    2156 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	     620 kB
+VmRSS:	     328 kB
+VmData:	     348 kB
+VmStk:	     136 kB
+VmExe:	      40 kB
+VmLib:	     960 kB
+VmPTE:	      12 kB
+VmPMD:	       0 kB
+VmSwap:	       0 kB
+Threads:	1
+SigQ:	0/735
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000000000002
+SigCgt:	00000000418044fc
+CapInh:	0000000000000000
+CapPrm:	0000003ffff7ffff
+CapEff:	0000003ffff7ffff
+CapBnd:	0000003ffff7ffff
+Cpus_allowed:	3
+Cpus_allowed_list:	0-1
+voluntary_ctxt_switches:	60711
+nonvoluntary_ctxt_switches:	1

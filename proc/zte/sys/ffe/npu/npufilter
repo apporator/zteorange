@@ -1,0 +1,28 @@
+name:npu_cap_filter
+     hookpos:0
+     hooknum:0
+     priority:-200
+name:npu_cap_filter
+     hookpos:0
+     hooknum:1
+     priority:-200
+name:flow_pps_url_filter
+     hookpos:0
+     hooknum:2
+     priority:400
+name:mc_front_create
+     hookpos:0
+     hooknum:2
+     priority:600
+name:flow_retry_filter_frontend_create
+     hookpos:0
+     hooknum:2
+     priority:800
+name:mc_backend_outdev
+     hookpos:1
+     hooknum:1
+     priority:0
+name:flow_retry_filter_backend_create
+     hookpos:1
+     hooknum:2
+     priority:800

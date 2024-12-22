@@ -1,0 +1,12 @@
+14 0 31:10 / / ro,relatime - jffs2 /dev/root ro
+15 14 0:4 / /proc rw,relatime - proc proc rw
+16 14 0:14 / /sys rw,relatime - sysfs sysfs rw
+17 14 31:3 / /tagparam rw,relatime - jffs2 /dev/mtdblock3 rw
+18 14 0:15 / /var rw,relatime - tmpfs tmpfs rw,size=30720k
+19 14 0:16 / /mnt rw,relatime - tmpfs tmpfs rw,size=1024k
+20 14 31:5 / /userconfig rw,relatime - jffs2 /dev/mtdblock5 rw
+21 14 31:6 / /usr/local/ct rw,relatime - jffs2 /dev/mtdblock6 rw
+22 14 31:4 / /wlan rw,relatime - jffs2 /dev/mtdblock4 rw
+23 14 31:9 / /usercustom rw,relatime - jffs2 /dev/mtdblock9 rw
+25 15 0:17 / /proc/bus/usb rw,relatime - usbfs none rw
+26 19 8:1 / /mnt/usb1_1 rw,nosuid,nodev,noexec,noatime,nodiratime - vfat /dev/sda1 rw,fmask=0111,dmask=0000,allow_utime=0022,codepage=936,iocharset=utf8,shortname=mixed,errors=remount-ro

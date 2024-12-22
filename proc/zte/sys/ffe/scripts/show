@@ -1,0 +1,5 @@
+#! /bin/sh
+
+# usage:show typemap/devinfo
+
+echo show $1 > /proc/zte/sys/ffe/cmd

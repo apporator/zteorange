@@ -1,0 +1,8 @@
+l3entry:-----vid|----pri|----gemport|----tcont|---queue|
+untag                          65535       255      255
+
+
+lan l2entry=============================================
+dev|out vid|out pri|in vid|in pri|gemport|tcont|queue|
+
+dscp_entry 0

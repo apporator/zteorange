@@ -1,0 +1,10 @@
+baseaddress    : 0x4200000
+current        : 1  
+version1states : 0x83
+version2states : 0x8f
+____________________________________________________
+Index   Running Latest  CRC     Integrality     Type
+----------------------------------------------------
+0	 N 	 Y 	 N 	 Y 		Upg
+1	 Y 	 Y 	 Y 	 Y 		Upg
+----------------------------------------------------

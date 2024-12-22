@@ -1,0 +1,1 @@
+tcp      6 1794 ESTABLISHED src=192.168.11.120 dst=192.168.11.1 sport=38034 dport=23 src=192.168.11.1 dst=192.168.11.120 sport=23 dport=38034 [ASSURED] mark=0 use=104

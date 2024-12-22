@@ -1,0 +1,37 @@
+00008000-0000f000 r-xp 00000000 1f:0a 103        /bin/rpcAgent
+00016000-00017000 r--p 00006000 1f:0a 103        /bin/rpcAgent
+00017000-00018000 rw-p 00007000 1f:0a 103        /bin/rpcAgent
+00018000-00019000 rw-p 00000000 00:00 0          [heap]
+b6e45000-b6edb000 r-xp 00000000 1f:0a 2154       /lib/libuClibc-0.9.33.2.so
+b6edb000-b6ee2000 ---p 00000000 00:00 0 
+b6ee2000-b6ee3000 r--p 00095000 1f:0a 2154       /lib/libuClibc-0.9.33.2.so
+b6ee3000-b6ee4000 rw-p 00096000 1f:0a 2154       /lib/libuClibc-0.9.33.2.so
+b6ee4000-b6ee9000 rw-p 00000000 00:00 0 
+b6ee9000-b6ef0000 r-xp 00000000 1f:0a 2137       /lib/liboss_pub.so
+b6ef0000-b6ef7000 ---p 00000000 00:00 0 
+b6ef7000-b6ef8000 r--p 00006000 1f:0a 2137       /lib/liboss_pub.so
+b6ef8000-b6ef9000 rw-p 00007000 1f:0a 2137       /lib/liboss_pub.so
+b6ef9000-b6f07000 rw-p 00000000 00:00 0 
+b6f07000-b6f15000 r-xp 00000000 1f:0a 2130       /lib/libm-0.9.33.2.so
+b6f15000-b6f1c000 ---p 00000000 00:00 0 
+b6f1c000-b6f1d000 r--p 0000d000 1f:0a 2130       /lib/libm-0.9.33.2.so
+b6f1d000-b6f1e000 rw-p 0000e000 1f:0a 2130       /lib/libm-0.9.33.2.so
+b6f1e000-b6f3b000 r-xp 00000000 1f:0a 2112       /lib/libgcc_s.so.1
+b6f3b000-b6f43000 ---p 00000000 00:00 0 
+b6f43000-b6f44000 rw-p 0001d000 1f:0a 2112       /lib/libgcc_s.so.1
+b6f44000-b6f5d000 r-xp 00000000 1f:0a 2092       /lib/libcommfun.so
+b6f5d000-b6f64000 ---p 00000000 00:00 0 
+b6f64000-b6f65000 r--p 00018000 1f:0a 2092       /lib/libcommfun.so
+b6f65000-b6f66000 rw-p 00019000 1f:0a 2092       /lib/libcommfun.so
+b6f66000-b6f67000 rw-p 00000000 00:00 0 
+b6f67000-b6f6a000 r-xp 00000000 1f:0a 2105       /lib/libdl-0.9.33.2.so
+b6f6a000-b6f71000 ---p 00000000 00:00 0 
+b6f71000-b6f72000 r--p 00002000 1f:0a 2105       /lib/libdl-0.9.33.2.so
+b6f72000-b6f73000 rw-p 00003000 1f:0a 2105       /lib/libdl-0.9.33.2.so
+b6f73000-b6f79000 r-xp 00000000 1f:0a 2079       /lib/ld-uClibc-0.9.33.2.so
+b6f7e000-b6f80000 rw-p 00000000 00:00 0 
+b6f80000-b6f81000 r--p 00005000 1f:0a 2079       /lib/ld-uClibc-0.9.33.2.so
+b6f81000-b6f82000 rw-p 00006000 1f:0a 2079       /lib/ld-uClibc-0.9.33.2.so
+bedd6000-bedf7000 rw-p 00000000 00:00 0          [stack]
+bee1b000-bee1c000 r-xp 00000000 00:00 0          [sigpage]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]

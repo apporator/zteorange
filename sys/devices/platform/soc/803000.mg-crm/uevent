@@ -1,0 +1,5 @@
+OF_NAME=mg-crm
+OF_FULLNAME=/soc/mg-crm@00803000
+OF_COMPATIBLE_0=arm,cortex-a9-mg-crm
+OF_COMPATIBLE_N=1
+MODALIAS=of:Nmg-crmT<NULL>Carm,cortex-a9-mg-crm

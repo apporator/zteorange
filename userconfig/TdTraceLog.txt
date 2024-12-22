@@ -1,0 +1,193 @@
+<1970-01-01 00:00:36>Td has been set mode<2>
+<1970-01-01 00:00:37>[Telnet Login],IP<192.168.11.243>,Mode<2>.
+upgradetest gdefconf
+<1970-01-01 00:00:37>[Telnet Logout],IP<192.168.11.243>,Mode<2>.
+<1970-01-01 00:00:38>[Telnet Login],IP<192.168.11.243>,Mode<2>.
+setmac 2 256
+setmac 2 257
+setmac 2 258
+setmac 2 259
+setmac 2 260
+setmac 2 261
+<1970-01-01 00:00:38>[Telnet Logout],IP<192.168.11.243>,Mode<2>.
+<1970-01-01 00:00:39>[Telnet Login],IP<192.168.11.243>,Mode<2>.
+setmac 2 2176
+setmac 2 2177
+setmac 2 2178
+setmac 2 768
+setmac 2 512
+<1970-01-01 00:00:39>[Telnet Logout],IP<192.168.11.243>,Mode<2>.
+<1970-01-01 00:00:40>[Telnet Login],IP<192.168.11.243>,Mode<2>.
+setmac 2 1024
+setmac 2 1296
+setmac 2 1028
+setmac 2 1328
+setmac 2 1537
+setmac 2 1793
+<1970-01-01 00:00:40>[Telnet Logout],IP<192.168.11.243>,Mode<2>.
+<1970-01-01 00:00:41>[Telnet Login],IP<192.168.11.243>,Mode<2>.
+setmac 2 2210
+<1970-01-01 00:00:41>[Telnet Logout],IP<192.168.11.243>,Mode<2>.
+<1970-01-01 00:00:42>[Telnet Login],IP<192.168.11.243>,Mode<2>.
+redir add
+insmod /kmodule/GN25L95.ko
+bobtest read_regs 160 00 95
+bobtest read_regs 160 68 24
+<1970-01-01 00:00:42>[Telnet Logout],IP<192.168.11.243>,Mode<2>.
+<1970-01-01 00:00:43>[Telnet Login],IP<192.168.11.243>,Mode<2>.
+cat /proc/csp/softVersion
+cat /proc/csp/hardVersion
+cat /proc/csp/verdate
+setmac 2 2054
+setmac 2 2195
+setmac 2 2193
+setmac 2 2212
+ls -l /tagparam/KARMA_CERTIFICATE.p12 /tagparam/ZTEGC4800B96-orangedevices_f680_zte_cp-a28d9693432d105b6c8ea655ba70ce5258873b7.p12 /tagparam/paramtag
+<1970-01-01 00:00:43>[Telnet Logout],IP<192.168.11.243>,Mode<2>.
+<1970-01-01 00:38:55>Td has been set mode<2>
+<1970-01-01 00:40:10>[Telnet Logout],IP<192.168.11.120>,Mode<2>.
+<1970-01-01 00:42:32>[Telnet check user failed,Locked!],IP<192.168.11.111>,Mode<2>.
+<1970-01-01 00:42:32>[Telnet Logout],IP<192.168.11.111>,Mode<2>.
+<1970-01-01 00:45:29>[Telnet Logout],IP<192.168.11.111>,Mode<2>.
+<1970-01-01 01:19:45>[Telnet check user failed,Locked!],IP<192.168.11.111>,Mode<0>.
+<1970-01-01 01:19:45>[Telnet Logout],IP<192.168.11.111>,Mode<0>.
+<1970-01-01 01:21:08>[Telnet check user failed,Locked!],IP<192.168.11.111>,Mode<0>.
+<1970-01-01 01:21:08>[Telnet Logout],IP<192.168.11.111>,Mode<0>.
+<1970-01-01 01:21:17>[Telnet Logout],IP<192.168.11.111>,Mode<0>.
+<1970-01-01 00:01:33>Td has been set mode<2>
+<1970-01-01 00:02:47>[Telnet Login],IP<192.168.11.120>,Mode<2>.
+ls
+top
+ls bin
+ls sbin
+ls /
+ls userconfig/
+cat /userconfig/cfg/
+ls /userconfig/cfg/
+cat /userconfig/cfg/db_user_cfg.xml
+ls /userconfig/cfg/
+<1970-01-01 00:12:22>[Telnet Logout],IP<192.168.11.120>,Mode<2>.
+<1970-01-01 00:14:37>[Telnet Login],IP<192.168.11.120>,Mode<2>.
+help
+ping 192.168.2.1
+iwconfig
+lshw
+iwlist wlan0 scan
+iwpriv wlan0
+iwpriv wlan1
+iwpriv wlan2
+iwpriv wlan3
+iwpriv wlan4
+iwpriv wlan5
+iwpriv wlan6
+iwpriv wlan7
+iwpriv wlan8
+iwpriv wlan9
+iwpriv wlan0 set_apcli enable
+iwpriv wlan0 ?
+iwpriv ?
+iwpriv --help
+iwpriv wlan0 --help
+iwpriv wlan0 get_site_survey
+iwpriv wlan0 set_apcli enable
+iwpriv wlan4 get_site_survey
+iwpriv wlan5 get_site_survey
+iwpriv wlan6 get_site_survey
+logcat
+grep wlan
+<1970-01-01 00:02:59>Td has been set mode<2>
+<1970-01-01 00:04:02>[Telnet Login],IP<192.168.11.111>,Mode<2>.
+<1970-01-01 00:09:03>[Telnet Logout],IP<192.168.11.111>,Mode<2>.
+<1970-01-01 00:11:39>[Telnet Login],IP<192.168.11.111>,Mode<2>.
+dmesg
+grep -i wifi
+dmesg
+grep -i error
+dmesg
+grep -i wifi
+dmesg
+grep -i error
+dmesg
+grep -i wifi
+dmesg
+grep -i error
+dmesg
+grep -i wifi
+grep -i error
+dmesg
+dmesg
+grep -i wifi
+grep -i error
+dmesg
+grep -i wifi
+dmesg
+iwpriv apcli0 set_apcli enable
+iwpriv wlan0 set_mode Managed
+ifconfig wlan0 down
+ifconfig wlan0 up
+ifconfig wlan0 down
+ifconfig wlan0 up
+ifconfig wlan0 down
+ifconfig wlan0 up
+iw dev wlan0 scan
+dmesg
+/
+/bin/sh: iw: not found
+/
+/bin/sh: dmesg: not found
+/
+cat /proc/sys/kernel/printk
+cat /proc/net/wireless
+cat /sys/class/net/wlan0/operstate
+cat /sys/class/net/wlan0/device/uevent
+iwpriv wlan0 stat
+iwpriv wlan0 get_mac_table
+<1970-01-01 00:32:00>Td has been set mode<2>
+<1970-01-01 00:32:35>[Telnet Login],IP<192.168.11.120>,Mode<2>.
+exit
+<1970-01-01 00:35:03>[Telnet Logout],IP<192.168.11.120>,Mode<2>.
+<1970-01-01 00:35:33>[Telnet Logout],IP<192.168.11.120>,Mode<2>.
+<1970-01-01 00:36:27>[Telnet Login],IP<192.168.11.120>,Mode<2>.
+help
+ls bin
+ls sbin
+ifconfig wlan0
+ping 8.8.8.8
+ls
+ls wlan
+ls wlan/caldata5g
+ls wlan/paramtag
+ls mnt
+ls temp
+tar
+ls
+ls mnt
+ls mnt
+ls mnt/usb1_1/
+cp -r / /mnt/usb
+cp -r / /mnt/usb1_1
+<1970-01-01 01:07:37>[Telnet Logout],IP<192.168.11.120>,Mode<2>.
+<1970-01-01 00:01:20>Td has been set mode<2>
+<1970-01-01 00:01:49>[Telnet Login],IP<192.168.11.120>,Mode<2>.
+cp -r --exclude=/proc --exclude=/sys --exclude=/dev --exclude=/mnt / /mnt/usb
+cp -r --exclude=/proc --exclude=/sys --exclude=/dev --exclude=/mnt / /mnt/usb1_1
+ls /mnt/
+cp -r --exclude=/dev --exclude=/mnt / /mnt/usb1_1
+cp -r / /mnt/usb1_1
+cp -r --exclude=/mnt --exclude=/dev / /mnt/usb1_1
+find / -path /mnt -prune -o -path /dev -prune -o -type f -print
+read file
+ls
+cp -r /mnt/usb1_1/{0uImage,home,linuxrc,sbin,tmp,var,bin,init,mnt,sys,userconfig,wlan,dev,kmodule,proc,tagparam,usercustom,etc,lib,root,temp,usr} /destination/path
+cp -r /mnt/usb1_1/{0uImage,home,linuxrc,sbin,tmp,var,bin,init,mnt,sys,userconfig,wlan,dev,kmodule,proc,tagparam,usercustom,etc,lib,root,temp,usr} /mnt/usb1_1
+cp -r /{0uImage,home,linuxrc,sbin,tmp,var,bin,init,mnt,sys,userconfig,wlan,dev,kmodule,proc,tagparam,usercustom,etc,lib,root,temp,usr} /mnt/usb1_1
+cp -r /0uImage /mnt/usb1_1
+cp -r /home/ /mnt/usb1_1
+cp -r /linuxrc /mnt/usb1_1
+cp -r /sbin/ /mnt/usb1_1
+cp -r /tmp /mnt/usb1_1
+cp -r /tmp /home /var /mnt/usb1_1
+<1970-01-01 00:23:45>[Telnet Logout],IP<192.168.11.120>,Mode<2>.
+<1970-01-01 00:25:41>[Telnet Login],IP<192.168.11.120>,Mode<2>.
+cp -r --exclude=/mnt --exclude=/dev / /mnt/usb1_1
+cp -r /0uImage /home /linuxrc /sbin /tmp /var /bin /init /sys /userconfig /wlan /kmodule /proc /tagparam /usercustom /etc /lib /root /temp /usr /mnt/usb1_1

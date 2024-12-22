@@ -1,0 +1,25 @@
+           CPU0       CPU1       
+ 16:     169513     169502       GIC  27 Edge      gt
+ 18:          0          0       GIC  42 Level     uart-pl011
+ 21:          1          0       GIC  62 Edge      pon
+ 22:       2519          0       GIC 112 Edge      pp
+ 23:          0          0       GIC 113 Edge      switch
+ 24:       7233          0       GIC 114 Edge      idm
+ 26:          0     338872       GIC  54 Level     tdm
+ 27:     117083          0       GIC  73 Level     pcie, wlan0
+ 28:       3380          0       GIC  96 Level     pcie, wlan4
+ 29:      88652          0       GIC  68 Level     9000000.usb, dwc2_hsotg:usb3
+ 30:          1          0       GIC  63 Level     phy0
+ 31:          0          0       GIC  64 Level     phy1
+ 32:          0          0       GIC  65 Level     phy2
+ 33:          0          0       GIC  66 Level     phy3
+ 34:          0          0       GIC  91 Level     xhci-hcd:usb1
+IPI0:          0          1  CPU wakeup interrupts
+IPI1:          0          0  Timer broadcast interrupts
+IPI2:      26687      80300  Rescheduling interrupts
+IPI3:          0          0  Function call interrupts
+IPI4:          1          0  Single function call interrupts
+IPI5:          0          0  CPU stop interrupts
+IPI6:          0          0  IRQ work interrupts
+IPI7:          0          0  completion interrupts
+Err:          0

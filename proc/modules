@@ -1,0 +1,21 @@
+mt7615_ap 3018488 2 - Live 0xbf55f000 (O)
+usrline_zlk 345251 2 - Live 0xbf4fc000 (O)
+usb_led 1341 0 - Live 0xbf4ee000 (O)
+ehci_platform 3680 0 - Live 0xbf4ea000
+xhci_plat_hcd 4161 0 - Live 0xbf4e5000
+xhci_hcd 93203 1 xhci_plat_hcd, Live 0xbf4c7000
+cdc_acm 16625 0 - Live 0xbf4bd000
+mt7603e_ap 1296044 2 mt7615_ap, Live 0xbf367000 (O)
+dsp_dev 227720 2 - Live 0xbf327000 (O)
+voip_codec 450782 1 dsp_dev, Live 0xbf2ac000 (O)
+kudp 68152 2 dsp_dev,voip_codec, Live 0xbf297000 (O)
+switch 136999 0 - Live 0xbf269000 (O)
+zte_xgmii 5541 0 - Live 0xbf264000 (O)
+gpondrv 37236 0 - Live 0xbf254000 (O)
+zte_gpon 274665 1 gpondrv, Live 0xbf1fe000 (O)
+netdriver 18704 1 switch, Live 0xbf1f5000 (O)
+tm 1576211 4 switch,gpondrv,zte_gpon,netdriver, Live 0xbf02a000 (O)
+zx_ponreg 2256 4 switch,gpondrv,zte_gpon,tm, Live 0xbf026000 (O)
+optical 28381 0 - Live 0xbf01a000 (O)
+bspdriver 54207 10 mt7615_ap,usrline_zlk,mt7603e_ap,switch,gpondrv,zte_gpon,netdriver,optical,[permanent], Live 0xbf004000 (O)
+patch 2057 0 - Live 0xbf000000 (O)

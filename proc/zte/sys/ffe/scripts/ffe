@@ -1,0 +1,5 @@
+#! /bin/sh
+
+# usage:ffe 0/1 (off/on ffe)
+
+echo ffe $1 > /proc/zte/sys/ffe/cmd

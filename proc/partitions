@@ -1,0 +1,15 @@
+major minor  #blocks  name
+
+  31        0     131072 mtdblock0
+  31        1       2048 mtdblock1
+  31        2       4096 mtdblock2
+  31        3       4096 mtdblock3
+  31        4       4096 mtdblock4
+  31        5       8192 mtdblock5
+  31        6       4096 mtdblock6
+  31        7      40960 mtdblock7
+  31        8      40960 mtdblock8
+  31        9      10240 mtdblock9
+  31       10      40832 mtdblock10
+   8        0    7563264 sda
+   8        1    7561216 sda1

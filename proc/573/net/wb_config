@@ -1,0 +1,18 @@
+======== WB_RX_HANDLER  =======
+Name[MCAST], Priority[16], Handler[c044929c]
+Name[COHERENCE], Priority[16], Handler[c04ba39c]
+======== NBIF_TX_HANDLER =======
+Name[QOS], Priority[16], Handler[c0482e00]
+Name[FFE], Priority[16], Handler[c048c9d4]
+Name[XPON], Priority[16], Handler[c0498adc]
+======== NBIF_RX_HANDLER =======
+======== NBIF_EXT_RX_HANDLER =======
+Name[WANVLAN], Priority[16], Handler[c04ba544]
+======== NBIF_EXT_TX_HANDLER =======
+Name[WANVLAN], Priority[16], Handler[c04ba5fc]
+=========WAN_BRIDGE_CFG =======
+WAN_BRIDGE[1]: BASE_DEV[pon0] IF_LIST:
+IF[1]: REAL_DEV[nbif0] ROUTE_MODE[1] VLAN_ENABLE[1] VLAN[0053] 802_1P[0] 
+IF[2]: REAL_DEV[nbif1] ROUTE_MODE[1] VLAN_ENABLE[1] VLAN[0050] 802_1P[4] 
+IF[3]: REAL_DEV[nbif2] ROUTE_MODE[0] VLAN_ENABLE[0] VLAN[0000] 802_1P[0] 
+=========

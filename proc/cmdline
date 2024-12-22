@@ -1,0 +1,1 @@
+console=ttyAMA0,115200n8 root=/dev/mtdblock10 ro rootfstype=jffs2 mem=128M; U-Boot V6.0.20P10N2 20230310175405 0x4200000 0x1 0x83 0x8f

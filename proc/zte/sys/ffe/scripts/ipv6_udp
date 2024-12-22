@@ -1,0 +1,5 @@
+#! /bin/sh
+
+# usage:proto 0/1/2 (0=all disable, 1=only enable ffe, 2=enable ffe and npu)
+
+echo ipv6_udp $1 > /proc/zte/sys/ffe/cmd

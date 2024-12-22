@@ -1,0 +1,14 @@
+br:br0 num:10 max:1024 
+port:wlan7 num:0 max:0
+port:wlan6 num:0 max:0
+port:wlan5 num:0 max:0
+port:wlan4 num:0 max:0
+port:wlan3 num:0 max:0
+port:wlan2 num:0 max:0
+port:wlan1 num:0 max:0
+port:wlan0 num:1 max:0
+port:nbif2 num:0 max:0
+port:eth3 num:0 max:0
+port:eth2 num:0 max:0
+port:eth1 num:0 max:0
+port:eth0 num:2 max:0

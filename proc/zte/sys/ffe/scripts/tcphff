@@ -1,0 +1,5 @@
+#! /bin/sh
+
+# usage:set tcp config hff
+
+echo tcphff $1 > /proc/zte/sys/ffe/cmd

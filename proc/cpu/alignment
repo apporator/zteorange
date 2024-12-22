@@ -1,0 +1,8 @@
+User:		0
+System:		225 (ip6_route_input+0x5c/0x8c)
+Skipped:	0
+Half:		0
+Word:		0
+DWord:		0
+Multi:		225
+User faults:	2 (fixup)

@@ -1,0 +1,12 @@
+/dev/root / jffs2 ro,relatime 0 0
+proc /proc proc rw,relatime 0 0
+sysfs /sys sysfs rw,relatime 0 0
+/dev/mtdblock3 /tagparam jffs2 rw,relatime 0 0
+tmpfs /var tmpfs rw,relatime,size=30720k 0 0
+tmpfs /mnt tmpfs rw,relatime,size=1024k 0 0
+/dev/mtdblock5 /userconfig jffs2 rw,relatime 0 0
+/dev/mtdblock6 /usr/local/ct jffs2 rw,relatime 0 0
+/dev/mtdblock4 /wlan jffs2 rw,relatime 0 0
+/dev/mtdblock9 /usercustom jffs2 rw,relatime 0 0
+none /proc/bus/usb usbfs rw,relatime 0 0
+/dev/sda1 /mnt/usb1_1 vfat rw,nosuid,nodev,noexec,noatime,nodiratime,fmask=0111,dmask=0000,allow_utime=0022,codepage=936,iocharset=utf8,shortname=mixed,errors=remount-ro 0 0

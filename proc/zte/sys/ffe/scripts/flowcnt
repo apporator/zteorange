@@ -1,0 +1,5 @@
+#! /bin/sh
+
+# usage:flowcnt xxxx
+
+echo flowcnt $1 > /proc/zte/sys/ffe/cmd

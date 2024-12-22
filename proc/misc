@@ -1,0 +1,8 @@
+ 57 ubi_ctrl
+ 59 memory_bandwidth
+ 60 network_throughput
+ 61 network_latency
+ 62 cpu_dma_latency
+183 hw_random
+229 fuse
+ 63 vga_arbiter

@@ -1,0 +1,40 @@
+************Global Configure************ 
+g_LoopbackEn:      0 
+g_Renew_time:      60s 
+g_Check_interval:  15s 
+g_Send_interval:   250ms 
+g_Ether_type:      0x880A 
+Looptest_mac:      FF:FF:FF:FF:FF:FF
+**************ETH Configure************* 
+Port:                   eth0
+Loopback_en:            0
+Alarm_en:               1
+Portdisloop_en:         1
+Already_loop_flag:      0
+Port_status:            1
+vlan==>
+
+Port:                   eth1
+Loopback_en:            0
+Alarm_en:               1
+Portdisloop_en:         1
+Already_loop_flag:      0
+Port_status:            1
+vlan==>
+
+Port:                   eth2
+Loopback_en:            0
+Alarm_en:               1
+Portdisloop_en:         1
+Already_loop_flag:      0
+Port_status:            1
+vlan==>
+
+Port:                   eth3
+Loopback_en:            0
+Alarm_en:               1
+Portdisloop_en:         1
+Already_loop_flag:      0
+Port_status:            1
+vlan==>
+

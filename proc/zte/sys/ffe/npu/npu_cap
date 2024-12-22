@@ -1,0 +1,118 @@
+====flow_feature index[0]====
+rxdev: pon0 pon gpon0 epon0
+txdev: eth*[0] wlan*[0]
+layer[3] type[3] (ipv4_tcp):
+	 pps:20
+	 frag:1
+	 layer_cap[1]:0000001f
+	 layer_cap[2]:00001c1f
+	 layer_cap[3]:0000001e
+	 layer_cap[5]:00001c1c
+	 layer_cap[9]:0000001c
+	 layer_cap[10]:0000001c
+layer[3] type[4] (ipv4_udp):
+	 pps:20
+	 frag:1
+	 layer_cap[1]:0000001f
+	 layer_cap[2]:00001c1f
+	 layer_cap[3]:0000001e
+	 layer_cap[5]:00001c1c
+	 layer_cap[9]:0000001c
+	 layer_cap[10]:0000001c
+layer[3] type[5] (dslite_tcp):
+	 pps:0
+	 frag:1
+	 layer_cap[1]:0000001f
+	 layer_cap[2]:00001c1f
+	 layer_cap[3]:0000001e
+	 layer_cap[5]:00001c1c
+	 layer_cap[7]:00001c12
+	 layer_cap[9]:0000001c
+	 layer_cap[10]:0000001c
+layer[3] type[6] (dslite_udp):
+	 pps:0
+	 frag:1
+	 layer_cap[1]:0000001f
+	 layer_cap[2]:00001c1f
+	 layer_cap[3]:0000001e
+	 layer_cap[5]:00001c1c
+	 layer_cap[7]:00001c12
+	 layer_cap[9]:0000001c
+	 layer_cap[10]:0000001c
+layer[3] type[9] (ipv6_tcp):
+	 pps:20
+	 frag:1
+	 layer_cap[1]:0000001f
+	 layer_cap[2]:00001c1f
+	 layer_cap[3]:0000001e
+	 layer_cap[7]:00001c1c
+	 layer_cap[9]:0000001c
+	 layer_cap[10]:0000001c
+layer[3] type[10] (ipv6_udp):
+	 pps:20
+	 frag:1
+	 layer_cap[1]:0000001f
+	 layer_cap[2]:00001c1f
+	 layer_cap[3]:0000001e
+	 layer_cap[7]:00001c1c
+	 layer_cap[9]:0000001c
+	 layer_cap[10]:0000001c
+====flow_feature index[1]====
+rxdev: eth* wlan*
+txdev: pon0[0] pon[0]
+layer[3] type[3] (ipv4_tcp):
+	 pps:20
+	 frag:1
+	 layer_cap[1]:0000001f
+	 layer_cap[2]:00001c1f
+	 layer_cap[3]:0000001d
+	 layer_cap[5]:00001c1c
+	 layer_cap[9]:0000001c
+	 layer_cap[10]:0000001c
+layer[3] type[4] (ipv4_udp):
+	 pps:20
+	 frag:1
+	 layer_cap[1]:0000001f
+	 layer_cap[2]:00001c1f
+	 layer_cap[3]:0000001d
+	 layer_cap[5]:00001c1c
+	 layer_cap[9]:0000001c
+	 layer_cap[10]:0000001c
+layer[3] type[5] (dslite_tcp):
+	 pps:0
+	 frag:1
+	 layer_cap[1]:0000001f
+	 layer_cap[2]:00001c1f
+	 layer_cap[3]:0000001d
+	 layer_cap[5]:00001c1c
+	 layer_cap[7]:00000011
+	 layer_cap[9]:0000001c
+	 layer_cap[10]:0000001c
+layer[3] type[6] (dslite_udp):
+	 pps:0
+	 frag:1
+	 layer_cap[1]:0000001f
+	 layer_cap[2]:00001c1f
+	 layer_cap[3]:0000001d
+	 layer_cap[5]:00001c1c
+	 layer_cap[7]:00000011
+	 layer_cap[9]:0000001c
+	 layer_cap[10]:0000001c
+layer[3] type[9] (ipv6_tcp):
+	 pps:20
+	 frag:1
+	 layer_cap[1]:0000001f
+	 layer_cap[2]:00001c1f
+	 layer_cap[3]:0000001d
+	 layer_cap[7]:00001c1c
+	 layer_cap[9]:0000001c
+	 layer_cap[10]:0000001c
+layer[3] type[10] (ipv6_udp):
+	 pps:20
+	 frag:1
+	 layer_cap[1]:0000001f
+	 layer_cap[2]:00001c1f
+	 layer_cap[3]:0000001d
+	 layer_cap[7]:00001c1c
+	 layer_cap[9]:0000001c
+	 layer_cap[10]:0000001c

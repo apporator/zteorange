@@ -1,0 +1,5 @@
+#! /bin/sh
+
+# usage:npuretry xxx (set npu max retry cnt)
+
+echo npuretry $1 > /proc/zte/sys/ffe/cmd

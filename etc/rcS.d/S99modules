@@ -1,0 +1,61 @@
+#!/bin/sh
+# add user-defined startup scripts here
+
+# optical
+/sbin/insmod /kmodule/optical.ko
+
+# reg
+/sbin/insmod /kmodule/zx_ponreg.ko
+
+#/sbin/insmod /kmodule/tagparam_mod.ko
+
+
+test -e /kmodule/peripheral.ko  && insmod /kmodule/peripheral.ko
+macmode=`setmac 2 4096|grep 3`
+
+# tm sdk
+if [ $macmode = 31 ];then
+/sbin/insmod /kmodule/tm.ko macMode=1
+else
+/sbin/insmod /kmodule/tm.ko macMode=0
+fi
+
+ifconfig pon up
+ifconfig omci up
+# ethdrv
+#chizi for ethdrv
+/sbin/insmod /kmodule/netdriver.ko
+ifconfig sw up
+
+# xgponmac sdk
+#/sbin/insmod /kmodule/zte_xgpon.ko
+
+# gponmac sdk
+/sbin/insmod /kmodule/zte_gpon.ko
+
+# gpondrv
+/sbin/insmod /kmodule/gpondrv.ko
+
+#zte_xgmii
+/sbin/insmod /kmodule/zte_xgmii.ko
+
+# switch 
+/sbin/insmod /kmodule/switch.ko
+
+# DSP driver
+/sbin/insmod /kmodule/kudp.ko
+/sbin/insmod /kmodule/voip_codec.ko
+/sbin/insmod /kmodule/dsp_dev.ko
+
+ifconfig idm0 up
+ifconfig idm1 up
+
+#ptp driver
+/sbin/insmod  /kmodule/ptpdrv.ko
+
+
+#usb redir driver
+
+
+/sbin/insmod  /kmodule/y1731drv.ko
+

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "======================================================"
+echo "mounting /dev/mtdblock9 to /usercustom, wait ..."
+    ( /bin/mount -n -t jffs2 /dev/mtdblock9 /usercustom ) ||   echo "  Mount failed"
+echo "======================================================"

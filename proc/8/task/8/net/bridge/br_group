@@ -1,0 +1,18 @@
+br0:
+idx    group
+[00]   [FFFFEFFF]
+[01]   [80000000]
+[02]   [7FFFFFFF]
+[03]   [FFFFFFFF]
+[04]   [FFFFFFFF]
+[05]   [FFFFFFFF]
+[06]   [FFFFFFFF]
+[07]   [7FFFEFFF]
+[08]   [FFFFFFFF]
+[09]   [FFFFFFFF]
+[10]   [FFFFFFFF]
+[11]   [FFFFFFFF]
+[12]   [FFFFFFFF]
+[13]   [FFFFFFFF]
+[14]   [FFFFFFFF]
+[15]   [FFFFFFFF]

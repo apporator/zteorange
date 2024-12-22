@@ -1,0 +1,13 @@
+Helper_name  Proto  Port
+       rtsp      6   554
+      H.245     17     0
+       pptp      6  1723
+        RAS     17  1719
+        RAS     17  1719
+      Q.931      6  1720
+      Q.931      6  1720
+        sip     17  5060
+        ftp      6    21
+        ftp      6    21
+       tftp     17    69
+       tftp     17    69

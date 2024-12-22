@@ -1,0 +1,592 @@
+00008000-00050000 r-xp 00000000 1f:0a 28         /bin/busybox
+Size:                288 kB
+Rss:                  52 kB
+Pss:                  13 kB
+Shared_Clean:         52 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         0 kB
+Referenced:           52 kB
+Anonymous:             0 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd ex mr mw me dw 
+00050000-00051000 r--p 00048000 1f:0a 28         /bin/busybox
+Size:                  4 kB
+Rss:                   4 kB
+Pss:                   4 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         4 kB
+Referenced:            4 kB
+Anonymous:             4 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd mr mw me dw ac 
+00051000-00052000 rw-p 00049000 1f:0a 28         /bin/busybox
+Size:                  4 kB
+Rss:                   4 kB
+Pss:                   4 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         4 kB
+Referenced:            4 kB
+Anonymous:             4 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd wr mr mw me dw ac 
+00052000-00088000 rw-p 00000000 00:00 0          [heap]
+Size:                216 kB
+Rss:                  16 kB
+Pss:                  16 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:        16 kB
+Referenced:           16 kB
+Anonymous:            16 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd wr mr mw me ac 
+b6e3b000-b6ed1000 r-xp 00000000 1f:0a 2154       /lib/libuClibc-0.9.33.2.so
+Size:                600 kB
+Rss:                 136 kB
+Pss:                   8 kB
+Shared_Clean:        136 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         0 kB
+Referenced:          136 kB
+Anonymous:             0 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd ex mr mw me 
+b6ed1000-b6ed8000 ---p 00000000 00:00 0 
+Size:                 28 kB
+Rss:                   0 kB
+Pss:                   0 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         0 kB
+Referenced:            0 kB
+Anonymous:             0 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: mr mw me 
+b6ed8000-b6ed9000 r--p 00095000 1f:0a 2154       /lib/libuClibc-0.9.33.2.so
+Size:                  4 kB
+Rss:                   4 kB
+Pss:                   4 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         4 kB
+Referenced:            4 kB
+Anonymous:             4 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd mr mw me ac 
+b6ed9000-b6eda000 rw-p 00096000 1f:0a 2154       /lib/libuClibc-0.9.33.2.so
+Size:                  4 kB
+Rss:                   4 kB
+Pss:                   4 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         4 kB
+Referenced:            4 kB
+Anonymous:             4 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd wr mr mw me ac 
+b6eda000-b6edf000 rw-p 00000000 00:00 0 
+Size:                 20 kB
+Rss:                  16 kB
+Pss:                  16 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:        16 kB
+Referenced:           16 kB
+Anonymous:            16 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd wr mr mw me ac 
+b6edf000-b6ee2000 r-xp 00000000 1f:0a 2105       /lib/libdl-0.9.33.2.so
+Size:                 12 kB
+Rss:                   4 kB
+Pss:                   0 kB
+Shared_Clean:          4 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         0 kB
+Referenced:            4 kB
+Anonymous:             0 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd ex mr mw me 
+b6ee2000-b6ee9000 ---p 00000000 00:00 0 
+Size:                 28 kB
+Rss:                   0 kB
+Pss:                   0 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         0 kB
+Referenced:            0 kB
+Anonymous:             0 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: mr mw me 
+b6ee9000-b6eea000 r--p 00002000 1f:0a 2105       /lib/libdl-0.9.33.2.so
+Size:                  4 kB
+Rss:                   4 kB
+Pss:                   4 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         4 kB
+Referenced:            4 kB
+Anonymous:             4 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd mr mw me ac 
+b6eea000-b6eeb000 rw-p 00003000 1f:0a 2105       /lib/libdl-0.9.33.2.so
+Size:                  4 kB
+Rss:                   4 kB
+Pss:                   4 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         4 kB
+Referenced:            4 kB
+Anonymous:             4 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd wr mr mw me ac 
+b6eeb000-b6ef2000 r-xp 00000000 1f:0a 2137       /lib/liboss_pub.so
+Size:                 28 kB
+Rss:                   0 kB
+Pss:                   0 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         0 kB
+Referenced:            0 kB
+Anonymous:             0 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd ex mr mw me 
+b6ef2000-b6ef9000 ---p 00000000 00:00 0 
+Size:                 28 kB
+Rss:                   0 kB
+Pss:                   0 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         0 kB
+Referenced:            0 kB
+Anonymous:             0 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: mr mw me 
+b6ef9000-b6efa000 r--p 00006000 1f:0a 2137       /lib/liboss_pub.so
+Size:                  4 kB
+Rss:                   4 kB
+Pss:                   4 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         4 kB
+Referenced:            4 kB
+Anonymous:             4 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd mr mw me ac 
+b6efa000-b6efb000 rw-p 00007000 1f:0a 2137       /lib/liboss_pub.so
+Size:                  4 kB
+Rss:                   4 kB
+Pss:                   4 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         4 kB
+Referenced:            4 kB
+Anonymous:             4 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd wr mr mw me ac 
+b6efb000-b6f09000 rw-p 00000000 00:00 0 
+Size:                 56 kB
+Rss:                   0 kB
+Pss:                   0 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         0 kB
+Referenced:            0 kB
+Anonymous:             0 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd wr mr mw me ac 
+b6f09000-b6f17000 r-xp 00000000 1f:0a 2130       /lib/libm-0.9.33.2.so
+Size:                 56 kB
+Rss:                   0 kB
+Pss:                   0 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         0 kB
+Referenced:            0 kB
+Anonymous:             0 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd ex mr mw me 
+b6f17000-b6f1e000 ---p 00000000 00:00 0 
+Size:                 28 kB
+Rss:                   0 kB
+Pss:                   0 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         0 kB
+Referenced:            0 kB
+Anonymous:             0 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: mr mw me 
+b6f1e000-b6f1f000 r--p 0000d000 1f:0a 2130       /lib/libm-0.9.33.2.so
+Size:                  4 kB
+Rss:                   0 kB
+Pss:                   0 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         0 kB
+Referenced:            0 kB
+Anonymous:             0 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd mr mw me ac 
+b6f1f000-b6f20000 rw-p 0000e000 1f:0a 2130       /lib/libm-0.9.33.2.so
+Size:                  4 kB
+Rss:                   4 kB
+Pss:                   4 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         4 kB
+Referenced:            4 kB
+Anonymous:             4 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd wr mr mw me ac 
+b6f20000-b6f3d000 r-xp 00000000 1f:0a 2112       /lib/libgcc_s.so.1
+Size:                116 kB
+Rss:                   8 kB
+Pss:                   0 kB
+Shared_Clean:          8 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         0 kB
+Referenced:            8 kB
+Anonymous:             0 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd ex mr mw me 
+b6f3d000-b6f45000 ---p 00000000 00:00 0 
+Size:                 32 kB
+Rss:                   0 kB
+Pss:                   0 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         0 kB
+Referenced:            0 kB
+Anonymous:             0 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: mr mw me 
+b6f45000-b6f46000 rw-p 0001d000 1f:0a 2112       /lib/libgcc_s.so.1
+Size:                  4 kB
+Rss:                   4 kB
+Pss:                   4 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         4 kB
+Referenced:            4 kB
+Anonymous:             4 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd wr mr mw me ac 
+b6f46000-b6f5f000 r-xp 00000000 1f:0a 2092       /lib/libcommfun.so
+Size:                100 kB
+Rss:                   4 kB
+Pss:                   0 kB
+Shared_Clean:          4 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         0 kB
+Referenced:            4 kB
+Anonymous:             0 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd ex mr mw me 
+b6f5f000-b6f66000 ---p 00000000 00:00 0 
+Size:                 28 kB
+Rss:                   0 kB
+Pss:                   0 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         0 kB
+Referenced:            0 kB
+Anonymous:             0 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: mr mw me 
+b6f66000-b6f67000 r--p 00018000 1f:0a 2092       /lib/libcommfun.so
+Size:                  4 kB
+Rss:                   4 kB
+Pss:                   4 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         4 kB
+Referenced:            4 kB
+Anonymous:             4 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd mr mw me ac 
+b6f67000-b6f68000 rw-p 00019000 1f:0a 2092       /lib/libcommfun.so
+Size:                  4 kB
+Rss:                   4 kB
+Pss:                   4 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         4 kB
+Referenced:            4 kB
+Anonymous:             4 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd wr mr mw me ac 
+b6f68000-b6f69000 rw-p 00000000 00:00 0 
+Size:                  4 kB
+Rss:                   0 kB
+Pss:                   0 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         0 kB
+Referenced:            0 kB
+Anonymous:             0 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd wr mr mw me ac 
+b6f69000-b6f6f000 r-xp 00000000 1f:0a 2079       /lib/ld-uClibc-0.9.33.2.so
+Size:                 24 kB
+Rss:                   8 kB
+Pss:                   0 kB
+Shared_Clean:          8 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         0 kB
+Referenced:            8 kB
+Anonymous:             0 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd ex mr mw me dw 
+b6f74000-b6f76000 rw-p 00000000 00:00 0 
+Size:                  8 kB
+Rss:                   8 kB
+Pss:                   8 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         8 kB
+Referenced:            8 kB
+Anonymous:             8 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd wr mr mw me ac 
+b6f76000-b6f77000 r--p 00005000 1f:0a 2079       /lib/ld-uClibc-0.9.33.2.so
+Size:                  4 kB
+Rss:                   4 kB
+Pss:                   4 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         4 kB
+Referenced:            4 kB
+Anonymous:             4 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd mr mw me dw ac 
+b6f77000-b6f78000 rw-p 00006000 1f:0a 2079       /lib/ld-uClibc-0.9.33.2.so
+Size:                  4 kB
+Rss:                   4 kB
+Pss:                   4 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         4 kB
+Referenced:            4 kB
+Anonymous:             4 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd wr mr mw me dw ac 
+bef82000-befa3000 rw-p 00000000 00:00 0          [stack]
+Size:                136 kB
+Rss:                   4 kB
+Pss:                   4 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         4 kB
+Referenced:            4 kB
+Anonymous:             4 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd wr mr mw me gd ac 
+befac000-befad000 r-xp 00000000 00:00 0          [sigpage]
+Size:                  4 kB
+Rss:                   0 kB
+Pss:                   0 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         0 kB
+Referenced:            0 kB
+Anonymous:             0 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd ex mr mw me de 
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]
+Size:                  4 kB
+Rss:                   0 kB
+Pss:                   0 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:         0 kB
+Referenced:            0 kB
+Anonymous:             0 kB
+AnonHugePages:         0 kB
+Swap:                  0 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Locked:                0 kB
+VmFlags: rd ex mr me 

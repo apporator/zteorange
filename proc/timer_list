@@ -1,0 +1,147 @@
+Timer List Version: v0.7
+HRTIMER_MAX_CLOCK_BASES: 4
+now at 1698902511292 nsecs
+
+cpu: 0
+ clock 0:
+  .base:       c6562270
+  .index:      0
+  .resolution: 10000000 nsecs
+  .get_time:   ktime_get
+active timers:
+ #0: <c5653ad8>, hrtimer_wakeup, S:01
+ # expires at 1699955792790-1699956847811 nsecs [in 1053281498 to 1054336519 nsecs]
+ #1: <c42ffad8>, hrtimer_wakeup, S:01
+ # expires at 1700860837127-1700863827398 nsecs [in 1958325835 to 1961316106 nsecs]
+ #2: <c5657ad8>, hrtimer_wakeup, S:01
+ # expires at 1700917218172-1700920204760 nsecs [in 2014706880 to 2017693468 nsecs]
+ #3: <c415bad8>, hrtimer_wakeup, S:01
+ # expires at 1701613257072-1701616249738 nsecs [in 2710745780 to 2713738446 nsecs]
+ #4: <c42fbad8>, hrtimer_wakeup, S:01
+ # expires at 1701630784970-1701633774957 nsecs [in 2728273678 to 2731263665 nsecs]
+ #5: <c434fad8>, hrtimer_wakeup, S:01
+ # expires at 1713090931417-1713120262134 nsecs [in 14188420125 to 14217750842 nsecs]
+ #6: <c4283ad8>, hrtimer_wakeup, S:01
+ # expires at 1739749610342-1739839519270 nsecs [in 40847099050 to 40937007978 nsecs]
+ #7: <c42f1ad8>, hrtimer_wakeup, S:01
+ # expires at 1739782227140-1739872128794 nsecs [in 40879715848 to 40969617502 nsecs]
+ #8: sched_clock_timer, sched_clock_poll, S:01
+ # expires at 4398046511103-4398046511103 nsecs [in 2699143999811 to 2699143999811 nsecs]
+ clock 1:
+  .base:       c65622a8
+  .index:      1
+  .resolution: 10000000 nsecs
+  .get_time:   ktime_get_real
+active timers:
+ clock 2:
+  .base:       c65622e0
+  .index:      2
+  .resolution: 10000000 nsecs
+  .get_time:   ktime_get_boottime
+active timers:
+ clock 3:
+  .base:       c6562318
+  .index:      3
+  .resolution: 10000000 nsecs
+  .get_time:   ktime_get_clocktai
+active timers:
+
+cpu: 1
+ clock 0:
+  .base:       c656d270
+  .index:      0
+  .resolution: 10000000 nsecs
+  .get_time:   ktime_get
+active timers:
+ #0: <c4159ad8>, hrtimer_wakeup, S:01
+ # expires at 1698962998272-1698963998262 nsecs [in 60486980 to 61486970 nsecs]
+ #1: <c4329b68>, hrtimer_wakeup, S:01
+ # expires at 1698993013517-1698993113515 nsecs [in 90502225 to 90602223 nsecs]
+ #2: <c563fad8>, hrtimer_wakeup, S:01
+ # expires at 1699154968612-1699155960306 nsecs [in 252457320 to 253449014 nsecs]
+ #3: <c42e1ad8>, hrtimer_wakeup, S:01
+ # expires at 1699226825282-1699227489084 nsecs [in 324313990 to 324977792 nsecs]
+ #4: <c565bad8>, hrtimer_wakeup, S:01
+ # expires at 1699400566760-1699402566691 nsecs [in 498055468 to 500055399 nsecs]
+ #5: <c5651ad8>, hrtimer_wakeup, S:01
+ # expires at 1699620598690-1699621598672 nsecs [in 718087398 to 719087380 nsecs]
+ #6: <c4369ad8>, hrtimer_wakeup, S:01
+ # expires at 1699700900532-1699705900522 nsecs [in 798389240 to 803389230 nsecs]
+ #7: <c6080d18>, it_real_fn, S:01
+ # expires at 1699861253105-1699861253105 nsecs [in 958741813 to 958741813 nsecs]
+ #8: <c5661ad8>, hrtimer_wakeup, S:01
+ # expires at 1701992537777-1701997526374 nsecs [in 3090026485 to 3095015082 nsecs]
+ #9: <c42f5ad8>, hrtimer_wakeup, S:01
+ # expires at 1703113024427-1703123024411 nsecs [in 4210513135 to 4220513119 nsecs]
+ #10: <c42edad8>, hrtimer_wakeup, S:01
+ # expires at 1712480644205-1712540644179 nsecs [in 13578132913 to 13638132887 nsecs]
+ #11: <c563bad8>, hrtimer_wakeup, S:01
+ # expires at 1724866444042-1724956349961 nsecs [in 25963932750 to 26053838669 nsecs]
+ #12: <c42abad8>, hrtimer_wakeup, S:01
+ # expires at 1739476154560-1739566057779 nsecs [in 40573643268 to 40663546487 nsecs]
+ #13: <c42b9ad8>, hrtimer_wakeup, S:01
+ # expires at 1739651121177-1739741019296 nsecs [in 40748609885 to 40838508004 nsecs]
+ #14: <c42efad8>, hrtimer_wakeup, S:01
+ # expires at 1739885341850-1739975243920 nsecs [in 40982830558 to 41072732628 nsecs]
+ #15: <c431dad8>, hrtimer_wakeup, S:01
+ # expires at 1740382054027-1740471953099 nsecs [in 41479542735 to 41569441807 nsecs]
+ #16: <c4349ad8>, hrtimer_wakeup, S:01
+ # expires at 1740900952470-1740990850508 nsecs [in 41998441178 to 42088339216 nsecs]
+ #17: <c435bad8>, hrtimer_wakeup, S:01
+ # expires at 1741177927272-1741267830940 nsecs [in 42275415980 to 42365319648 nsecs]
+ #18: <c427dad8>, hrtimer_wakeup, S:01
+ # expires at 1829651242530-1829751242530 nsecs [in 130748731238 to 130848731238 nsecs]
+ #19: <c4247ad8>, hrtimer_wakeup, S:01
+ # expires at 432032189265887-432032289265887 nsecs [in 430333286754595 to 430333386754595 nsecs]
+ clock 1:
+  .base:       c656d2a8
+  .index:      1
+  .resolution: 10000000 nsecs
+  .get_time:   ktime_get_real
+active timers:
+ clock 2:
+  .base:       c656d2e0
+  .index:      2
+  .resolution: 10000000 nsecs
+  .get_time:   ktime_get_boottime
+active timers:
+ clock 3:
+  .base:       c656d318
+  .index:      3
+  .resolution: 10000000 nsecs
+  .get_time:   ktime_get_clocktai
+active timers:
+
+Tick Device: mode:     0
+Broadcast device
+Clock Event Device: <NULL>
+tick_broadcast_mask: 00000000
+
+Tick Device: mode:     0
+Per CPU device: 0
+Clock Event Device: arm_global_timer
+ max_delta_ns:   10737418240
+ min_delta_ns:   1000
+ mult:           858993459
+ shift:          31
+ mode:           2
+ next_event:     9223372036854775807 nsecs
+ set_next_event: gt_clockevent_set_next_event
+ set_mode:       gt_clockevent_set_mode
+ event_handler:  tick_handle_periodic
+ retries:        0
+
+Tick Device: mode:     0
+Per CPU device: 1
+Clock Event Device: arm_global_timer
+ max_delta_ns:   10737418240
+ min_delta_ns:   1000
+ mult:           858993459
+ shift:          31
+ mode:           2
+ next_event:     9223372036854775807 nsecs
+ set_next_event: gt_clockevent_set_next_event
+ set_mode:       gt_clockevent_set_mode
+ event_handler:  tick_handle_periodic
+ retries:        0
+

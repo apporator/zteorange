@@ -1,0 +1,7 @@
+DRIVER=zx-uart
+OF_NAME=serial
+OF_FULLNAME=/soc/serial@0x94405000
+OF_COMPATIBLE_0=zte,ZX279127-uart
+OF_COMPATIBLE_N=1
+OF_ALIAS_0=serial0
+MODALIAS=of:NserialT<NULL>Czte,ZX279127-uart

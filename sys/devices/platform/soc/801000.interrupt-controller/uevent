@@ -1,0 +1,5 @@
+OF_NAME=interrupt-controller
+OF_FULLNAME=/soc/interrupt-controller@00801000
+OF_COMPATIBLE_0=arm,cortex-a9-gic
+OF_COMPATIBLE_N=1
+MODALIAS=of:Ninterrupt-controllerT<NULL>Carm,cortex-a9-gic

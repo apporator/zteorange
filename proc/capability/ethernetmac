@@ -1,0 +1,5 @@
+IfName EMAC Mode Speed    Duplex   AutoNeg CurMode Port
+eth0   0    1    1000Mbps full     1       GMII    0
+eth1   0    1    1000Mbps full     1       GMII    1
+eth2   0    1    1000Mbps full     1       GMII    2
+eth3   0    1    1000Mbps full     1       GMII    3

@@ -1,0 +1,18 @@
+version:3.6.6
+npu------npu 0/1 (off/on npu)
+npudd------npudd 0/1 (off/on npu drv debug info)
+npuretry------npuretry xxx (set npu max retry cnt)
+pps------pps cap_index layer type pps
+ipv6_tcp------proto 0/1/2 (0=all disable, 1=only enable ffe, 2=enable ffe and npu)
+ipv6_udp------proto 0/1/2 (0=all disable, 1=only enable ffe, 2=enable ffe and npu)
+ipv4_tcp------proto 0/1/2 (0=all disable, 1=only enable ffe, 2=enable ffe and npu)
+ipv4_udp------proto 0/1/2 (0=all disable, 1=only enable ffe, 2=enable ffe and npu)
+ipv4_raw------proto 0/1/2 (0=all disable, 1=only enable ffe, 2=enable ffe and npu)
+layer_enable------layer enable 0 1 2 3
+timer------timer interval cpuid
+flowcnt------flowcnt xxxx
+tcphff------set tcp config hff
+utimeout------set utimeout(ms)
+ffe------ffe 0/1 (off/on ffe)
+del------del flows
+show------show typemap/devinfo

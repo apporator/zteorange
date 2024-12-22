@@ -1,0 +1,6 @@
+DRIVER=spidev
+OF_NAME=silicon
+OF_FULLNAME=/soc/ssp@9a105000/silicon@0
+OF_COMPATIBLE_0=rohm,dh2228fv
+OF_COMPATIBLE_N=1
+MODALIAS=spi:dh2228fv

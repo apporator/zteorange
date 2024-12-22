@@ -1,0 +1,34 @@
+version:3.6.6
+enable:1
+max flow:11768
+curr:0
+high_wm:11032
+hint_wm:0
+overflow_cnt:0
+timeout:45000 msec
+tcphff:0
+layer_enable:2 
+proto flow cnt:
+    ipv4_raw:0 npu:0
+    ipv4_udp:0 npu:0
+    ipv4_tcp:0 npu:0
+    ipv6_udp:0 npu:0
+    ipv6_tcp:0 npu:0
+statics:
+    rx pkts:0
+    rx bytes:0
+    rx errors:0
+    tx pkts:0
+    tx bytes:0
+    tx stops:0
+    tx filters:0
+    tx errors:0
+    pps:0
+    kbps:0 Kbps
+    slowpathcnt:2563
+    slowpathpps:0
+npuinfo:
+    enable:1
+    npuflowcnt:0
+    createfail:0
+    deletefail:0

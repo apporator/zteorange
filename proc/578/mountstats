@@ -1,0 +1,12 @@
+device /dev/root mounted on / with fstype jffs2
+device proc mounted on /proc with fstype proc
+device sysfs mounted on /sys with fstype sysfs
+device /dev/mtdblock3 mounted on /tagparam with fstype jffs2
+device tmpfs mounted on /var with fstype tmpfs
+device tmpfs mounted on /mnt with fstype tmpfs
+device /dev/mtdblock5 mounted on /userconfig with fstype jffs2
+device /dev/mtdblock6 mounted on /usr/local/ct with fstype jffs2
+device /dev/mtdblock4 mounted on /wlan with fstype jffs2
+device /dev/mtdblock9 mounted on /usercustom with fstype jffs2
+device none mounted on /proc/bus/usb with fstype usbfs
+device /dev/sda1 mounted on /mnt/usb1_1 with fstype vfat

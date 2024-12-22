@@ -1,0 +1,26 @@
+Name:	ffeflush
+State:	S (sleeping)
+Tgid:	476
+Ngid:	0
+Pid:	476
+PPid:	2
+TracerPid:	0
+Uid:	0	0	0	0
+Gid:	0	0	0	0
+FDSize:	32
+Groups:	
+Threads:	1
+SigQ:	0/735
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	ffffffffffffffff
+SigCgt:	0000000000000000
+CapInh:	0000000000000000
+CapPrm:	0000003ffff7ffff
+CapEff:	0000003ffff7ffff
+CapBnd:	0000003ffff7ffff
+Cpus_allowed:	3
+Cpus_allowed_list:	0-1
+voluntary_ctxt_switches:	1773
+nonvoluntary_ctxt_switches:	0

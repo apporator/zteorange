@@ -1,0 +1,6 @@
+sockets: used 258
+TCP: inuse 6 orphan 0 tw 0 alloc 10 mem 0
+UDP: inuse 5 mem 0
+UDPLITE: inuse 0
+RAW: inuse 0
+FRAG: inuse 0 memory 0

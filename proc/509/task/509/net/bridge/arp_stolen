@@ -1,0 +1,5 @@
+3
+0: no arp stolen
+1: LAN->WAN arp stolen
+2: WAN->LAN arp stolen
+3: LAN<->WAN arp stolen

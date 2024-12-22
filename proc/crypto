@@ -1,0 +1,52 @@
+name         : lzo
+driver       : lzo-generic
+module       : kernel
+priority     : 0
+refcnt       : 2
+selftest     : passed
+internal     : no
+type         : compression
+
+name         : crct10dif
+driver       : crct10dif-generic
+module       : kernel
+priority     : 100
+refcnt       : 2
+selftest     : passed
+internal     : no
+type         : shash
+blocksize    : 1
+digestsize   : 2
+
+name         : crc32c
+driver       : crc32c-generic
+module       : kernel
+priority     : 100
+refcnt       : 1
+selftest     : passed
+internal     : no
+type         : shash
+blocksize    : 1
+digestsize   : 4
+
+name         : deflate
+driver       : deflate-generic
+module       : kernel
+priority     : 0
+refcnt       : 2
+selftest     : passed
+internal     : no
+type         : compression
+
+name         : aes
+driver       : aes-generic
+module       : kernel
+priority     : 100
+refcnt       : 1
+selftest     : passed
+internal     : no
+type         : cipher
+blocksize    : 16
+min keysize  : 16
+max keysize  : 32
+

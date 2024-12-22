@@ -1,0 +1,5 @@
+#! /bin/sh
+
+# usage:layer enable 0 1 2 3
+
+echo layer_enable $1 $2 > /proc/zte/sys/ffe/cmd

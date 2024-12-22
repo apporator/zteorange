@@ -1,0 +1,4 @@
+       key      shmid perms       size  cpid  lpid nattch   uid   gid  cuid  cgid      atime      dtime      ctime        rss       swap
+     43690          0     0       2048   602  1205      1     0     0     0     0         37         37         13       4096          0
+     43947      32769     0     131072   606  1348     10     0     0     0     0       1520       1541         13      24576          0
+     65535      65538     0    2097152   609  1348      9     0     0     0     0       1520       1541         14    1015808          0

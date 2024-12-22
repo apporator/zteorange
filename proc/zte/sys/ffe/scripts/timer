@@ -1,0 +1,5 @@
+#! /bin/sh
+
+# usage:timer interval cpuid
+
+echo timer $1 $2 > /proc/zte/sys/ffe/cmd

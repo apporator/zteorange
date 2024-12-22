@@ -1,0 +1,5 @@
+192.168.11.1	gpon.net.	gpon.net
+fe80::1	gpon.net.	gpon.net
+192.168.11.1	fiberbox.	fiberbox
+fe80::1	fiberbox.	fiberbox
+127.0.0.1   localhost.localdomain   localhost

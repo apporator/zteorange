@@ -1,0 +1,3291 @@
+<7>dwc2 9000000.usb:   hctsiz.xfersize 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   urb->actual_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 2-OUT status 0 actual 31
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 14, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c13bf380
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 1, IN
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c132d400, Transfer DMA: 4132d400
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=1, ep_dir=80, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26ad600)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00008000
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(15) to 00c88a00
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 15
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 1
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 00080200 to HCTSIZ(15)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 15
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 4132d400 to HCDMA(15)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(15)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00008000
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 15
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 15 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 15 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 15 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=512
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: IN, channel 15
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 0
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c13bf380 device 3 ep 1-IN status 0 actual 512
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: dwc2_halt_channel()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 15, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26ad600,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 1, IN
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 13
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=1, ep_dir=80, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26ad600)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000001
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(0) to 00c88a00
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 0
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 1
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(0)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 0
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(0)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(0)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000001
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 0
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 0 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 0 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 0 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=13
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: IN, channel 0
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 499
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 13
+<7>dwc2 9000000.usb:   urb->actual_length 13
+<7>dwc2 9000000.usb:   short_read 1, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 1-IN status 0 actual 13
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: dwc2_halt_channel()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 0, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26ad600,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 0008001f to HCTSIZ(7)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 7
+<7>dwc2 9000000.usb: 	 Xfer Size: 31
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(7)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(7)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000080
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 7
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 7 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 7 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 7 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: urb_enqueue, urb c13bf480
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 8
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(8)
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: HAINT=00000100
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 8 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 8
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c13bf480 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 8, halt_status 2
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HAINTMSK to 00000200
+<7>dwc2 9000000.usb: set HCCHAR(9) to 00c88a00
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 0008001f to HCTSIZ(13)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 13
+<7>dwc2 9000000.usb: 	 Xfer Size: 31
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(13)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(13)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00002000
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 13
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 13 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 13 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 13 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 13
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   hctsiz.xfersize 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   urb->actual_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 2-OUT status 0 actual 31
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 13, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c4355c80
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c39ff000, Transfer DMA: 439ff000
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00004000
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(14) to 00c81200
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 14
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(14)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 14
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 439ff000 to HCDMA(14)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(14)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00004000
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 14
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 14 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 14 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 14 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=512
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 14
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c4355c80 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 14, halt_status 2
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 1, IN
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 13
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=1, ep_dir=80, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26ad600)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00008000
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(15) to 00c88a00
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 15
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 1
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 00080200 to HCTSIZ(15)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 15
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(15)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(15)
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 3
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(3)
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(3)
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 3
+<7>dwc2 9000000.usb: --Host Channel 3 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 3 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c1416000, Transfer DMA: 41416000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HAINTMSK to 00000010
+<7>dwc2 9000000.usb: set HCCHAR(4) to 00c81200
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 4
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: Wrote 41416000 to HCDMA(4)
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(4)
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 4
+<7>dwc2 9000000.usb: --Host Channel 4 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 4 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=512
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 512
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb:   Endpoint: 1, IN
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Data buffer length: 13
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb: addr=3, ep_num=1, ep_dir=80, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26ad600)
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 5
+<7>dwc2 9000000.usb: 	 Ep Num: 1
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: Wrote 00080200 to HCTSIZ(5)
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000020
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 5
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 5 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 5 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 5 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=13
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: IN, channel 5
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 499
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 13
+<7>dwc2 9000000.usb:   urb->actual_length 13
+<7>dwc2 9000000.usb:   short_read 1, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 1-IN status 0 actual 13
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: dwc2_halt_channel()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 5, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26ad600,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(8)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(8)
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 12
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(12)
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(12)
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 12
+<7>dwc2 9000000.usb: --Host Channel 12 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 12 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: urb_enqueue, urb c13bf080
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 13
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(13)
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: HAINT=00002000
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 13 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 13
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c13bf080 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 13, halt_status 2
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HAINTMSK to 00004000
+<7>dwc2 9000000.usb: set HCCHAR(14) to 00c88a00
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 14
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(14)
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(14)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00004000
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 14
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 14 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 14 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 14 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=13
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: IN, channel 14
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 499
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 13
+<7>dwc2 9000000.usb:   urb->actual_length 13
+<7>dwc2 9000000.usb:   short_read 1, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 1-IN status 0 actual 13
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: dwc2_halt_channel()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 14, halt_status 2
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 6
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 42cf6000 to HCDMA(6)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(6)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000040
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 6
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 6 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 6 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 6 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=512
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 6
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c13bfa00 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 6, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 12
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(12)
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: HAINT=00001000
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 12 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 12
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c13bfa00 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 12, halt_status 2
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HAINTMSK to 00002000
+<7>dwc2 9000000.usb: set HCCHAR(13) to 00c88a00
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 13
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(13)
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(13)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 2
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 42fe7000 to HCDMA(2)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(2)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000004
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 2
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 2 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 2 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 2 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=512
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 2
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c13bfa00 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 2, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 0008001f to HCTSIZ(7)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 7
+<7>dwc2 9000000.usb: 	 Xfer Size: 31
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(7)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(7)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000080
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 7
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 7 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 7 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 7 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 7
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   hctsiz.xfersize 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   urb->actual_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 2-OUT status 0 actual 31
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 7, halt_status 2
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c4355800
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c1521000, Transfer DMA: 41521000
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000100
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(8) to 00c81200
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 8
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(8)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 8
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 41521000 to HCDMA(8)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(8)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000100
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 8
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 8 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 8 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 8 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=512
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 8
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c4355800 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 8, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 1, IN
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 13
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=1, ep_dir=80, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26ad600)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000200
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(9) to 00c88a00
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 9
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 1
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 00080200 to HCTSIZ(9)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 9
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(9)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(9)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000200
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 9
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 9 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 9 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 9 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=13
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: IN, channel 9
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 499
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 13
+<7>dwc2 9000000.usb:   urb->actual_length 13
+<7>dwc2 9000000.usb:   short_read 1, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 1-IN status 0 actual 13
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: dwc2_halt_channel()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 9, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26ad600,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00008000
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 15
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 15 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 15 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 15 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=13
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: IN, channel 15
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 499
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 13
+<7>dwc2 9000000.usb:   urb->actual_length 13
+<7>dwc2 9000000.usb:   short_read 1, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 1-IN status 0 actual 13
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: dwc2_halt_channel()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 15, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26ad600,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 31
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000001
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(0) to 00c81200
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 0
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 0008001f to HCTSIZ(0)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 0
+<7>dwc2 9000000.usb: 	 Xfer Size: 31
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(0)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000004
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 2
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 2 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 2 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 2 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=13
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: IN, channel 2
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 499
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 13
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 0008001f to HCTSIZ(6)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 6
+<7>dwc2 9000000.usb: 	 Xfer Size: 31
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(6)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(6)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000040
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 6
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 6 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 6 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 6 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 6
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   hctsiz.xfersize 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   urb->actual_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 2-OUT status 0 actual 31
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 6, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c13bfa00
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c3864000, Transfer DMA: 43864000
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000080
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(7) to 00c81200
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 7
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(7)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 7
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 43864000 to HCDMA(7)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(7)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000080
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 7
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 7 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 7 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 7 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=512
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 7
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c13bfa00 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 7, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 1, IN
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 13
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=1, ep_dir=80, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26ad600)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000100
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(8) to 00c88a00
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 8
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 1
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(8)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 8
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(8)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(8)
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 0008001f to HCTSIZ(9)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 9
+<7>dwc2 9000000.usb: 	 Xfer Size: 31
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(9)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(9)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000200
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 9
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 9 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 9 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 9 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 9
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   hctsiz.xfersize 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   urb->actual_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 2-OUT status 0 actual 31
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 9, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c13bfb00
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c3885000, Transfer DMA: 43885000
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000400
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(10) to 00c81200
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 10
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(10)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 10
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 43885000 to HCDMA(10)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(10)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000400
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 10
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 10 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 10 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 10 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=512
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 10
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c13bfb00 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 10, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 1, IN
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 13
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=1, ep_dir=80, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26ad600)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000800
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(11) to 00c88a00
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 11
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 1
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 00080200 to HCTSIZ(11)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 11
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(11)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(11)
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 12
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(12)
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(12)
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 12
+<7>dwc2 9000000.usb: --Host Channel 12 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 12 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: urb_enqueue, urb c13bff00
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 13
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(13)
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: HAINT=00002000
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 13 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 13
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c13bff00 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 13, halt_status 2
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HAINTMSK to 00004000
+<7>dwc2 9000000.usb: set HCCHAR(14) to 00c88a00
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 14
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(14)
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(14)
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(3)
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: HAINT=00000008
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 3 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 3
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c13bff00 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 3, halt_status 2
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HAINTMSK to 00000010
+<7>dwc2 9000000.usb: set HCCHAR(4) to 00c88a00
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 4
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(4)
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(4)
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 4
+<7>dwc2 9000000.usb: --Host Channel 4 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 4 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=13
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 13
+<7>dwc2 9000000.usb:   short_read 1, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26ad600,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 0008001f to HCTSIZ(7)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 7
+<7>dwc2 9000000.usb: 	 Xfer Size: 31
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(7)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(7)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000080
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 7
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 7 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 7 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 7 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 7
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   hctsiz.xfersize 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   urb->actual_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 2-OUT status 0 actual 31
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 7, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1e21600
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c1a68000, Transfer DMA: 41a68000
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000100
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(8) to 00c81200
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 8
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(8)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 8
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 41a68000 to HCDMA(8)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(8)
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: Wrote 00080200 to HCTSIZ(9)
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 0008001f to HCTSIZ(0)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 0
+<7>dwc2 9000000.usb: 	 Xfer Size: 31
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(0)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(0)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000001
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 0
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 0 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 0 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 0 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 0
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   hctsiz.xfersize 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   urb->actual_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 2-OUT status 0 actual 31
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 0, halt_status 2
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1e21300
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c2803000, Transfer DMA: 42803000
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000002
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(1) to 00c81200
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 1
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(1)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 1
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 42803000 to HCDMA(1)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(1)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000002
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 1
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 1 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 1 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 1 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=512
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 1
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1e21300 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 1, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb:   Endpoint: 1, IN
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 13
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=1, ep_dir=80, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26ad600)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000004
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(2) to 00c88a00
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 2
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 1
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(2)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 2
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(2)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(2)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000004
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 2
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 2 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 2 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 2 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=13
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: IN, channel 2
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 499
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 13
+<7>dwc2 9000000.usb:   urb->actual_length 13
+<7>dwc2 9000000.usb:   short_read 1, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 1-IN status 0 actual 13
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: dwc2_halt_channel()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 2, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26ad600,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1e21480
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c4bfe000, Transfer DMA: 44bfe000
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000010
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(4) to 00c81200
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 4
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(4)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 4
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 44bfe000 to HCDMA(4)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(4)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000010
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 4
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 4 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 4 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 4 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=512
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 4
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1e21480 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 4, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb:   Endpoint: 1, IN
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 13
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=1, ep_dir=80, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26ad600)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000020
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(5) to 00c88a00
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 5
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 1
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 00080200 to HCTSIZ(5)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 5
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(5)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(5)
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 0008001f to HCTSIZ(9)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 9
+<7>dwc2 9000000.usb: 	 Xfer Size: 31
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(9)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(9)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000200
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 9
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 9 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 9 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 9 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 9
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   hctsiz.xfersize 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   urb->actual_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 2-OUT status 0 actual 31
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 9, halt_status 2
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1e21f00
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c0afc000, Transfer DMA: 40afc000
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000400
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(10) to 00c81200
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 10
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(10)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 10
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 40afc000 to HCDMA(10)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(10)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000400
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 10
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 10 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 10 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 10 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=512
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 10
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1e21f00 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 10, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb:   Endpoint: 1, IN
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 13
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=1, ep_dir=80, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26ad600)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000800
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(11) to 00c88a00
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 11
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 1
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 00080200 to HCTSIZ(11)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 11
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(11)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(11)
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 0008001f to HCTSIZ(12)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 12
+<7>dwc2 9000000.usb: 	 Xfer Size: 31
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(12)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(12)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00001000
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 12
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 12 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 12 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 12 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 12
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   hctsiz.xfersize 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   urb->actual_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 2-OUT status 0 actual 31
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 12, halt_status 2
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1e21e80
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c4a68000, Transfer DMA: 44a68000
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00002000
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(13) to 00c81200
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 13
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(13)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 13
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 44a68000 to HCDMA(13)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(13)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00002000
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 13
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 13 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 13 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 13 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=512
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 13
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1e21e80 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 13, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb:   Endpoint: 1, IN
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 13
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=1, ep_dir=80, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26ad600)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00004000
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(14) to 00c88a00
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 14
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 1
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(14)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 14
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(14)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(14)
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 2
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(2)
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(2)
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 2
+<7>dwc2 9000000.usb: --Host Channel 2 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 2 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 2, halt_status 2
+<7>dwc2 9000000.usb: urb_enqueue, urb c1e21e00
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(3)
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: HAINT=00000008
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 3 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 3
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1e21e00 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HAINTMSK to 00000010
+<7>dwc2 9000000.usb: set HCCHAR(4) to 00c88a00
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 4
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(4)
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(4)
+<7>dwc2 9000000.usb: --Host Channel 6 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=512
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 6
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c13bf680 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 6, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 1, IN
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 13
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=1, ep_dir=80, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26ad600)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000080
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(7) to 00c88a00
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 7
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 1
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 00080200 to HCTSIZ(7)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 7
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(7)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(7)
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: Wrote 0008001f to HCTSIZ(11)
+<7>dwc2 9000000.usb: 	 Xfer Size: 31
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: HAINT=00000800
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 11 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 11
+<7>dwc2 9000000.usb:   hctsiz.xfersize 31
+<7>dwc2 9000000.usb:   urb->actual_length 31
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 2-OUT status 0 actual 31
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 11, halt_status 2
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c28fe000, Transfer DMA: 428fe000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HAINTMSK to 00001000
+<7>dwc2 9000000.usb: set HCCHAR(12) to 00c81200
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 12
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: Wrote 428fe000 to HCDMA(12)
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(12)
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 12
+<7>dwc2 9000000.usb: --Host Channel 12 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 12 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=512
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 512
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb:   Endpoint: 1, IN
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Data buffer length: 13
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb: addr=3, ep_num=1, ep_dir=80, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26ad600)
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 13
+<7>dwc2 9000000.usb: 	 Ep Num: 1
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: Wrote 00080200 to HCTSIZ(13)
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(6)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(6)
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1e21e00
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c4adc000, Transfer DMA: 44adc000
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00004000
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(14) to 00c81200
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 14
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(14)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 14
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 44adc000 to HCDMA(14)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(14)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00004000
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 14
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 14 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 14 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 14 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=512
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 14
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1e21e00 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 14, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb:   Endpoint: 1, IN
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 13
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=1, ep_dir=80, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26ad600)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00008000
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(15) to 00c88a00
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 15
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 1
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 00080200 to HCTSIZ(15)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 15
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(15)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(15)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00008000
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 15
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 15 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 15 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 15 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=13
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: IN, channel 15
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 499
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 13
+<7>dwc2 9000000.usb:   urb->actual_length 13
+<7>dwc2 9000000.usb:   short_read 1, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 1-IN status 0 actual 13
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: dwc2_halt_channel()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 15, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26ad600,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 31
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000001
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(0) to 00c81200
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 0
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 0008001f to HCTSIZ(0)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 0
+<7>dwc2 9000000.usb: 	 Xfer Size: 31
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(0)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 0
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   hctsiz.xfersize 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   urb->actual_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 2-OUT status 0 actual 31
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 0, halt_status 2
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1e21400
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c4abc000, Transfer DMA: 44abc000
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000002
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(1) to 00c81200
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 1
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(1)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 1
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 44abc000 to HCDMA(1)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(1)
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 0008001f to HCTSIZ(3)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 3
+<7>dwc2 9000000.usb: 	 Xfer Size: 31
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(3)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(3)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000008
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 3
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 3 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 3 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 3 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 3
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   hctsiz.xfersize 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   urb->actual_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 2-OUT status 0 actual 31
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 3, halt_status 2
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1e21280
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c2f9a000, Transfer DMA: 42f9a000
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000010
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(4) to 00c81200
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 4
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(4)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 4
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 42f9a000 to HCDMA(4)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(4)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000010
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 4
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 4 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 4 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 4 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=512
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 4
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1e21280 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 4, halt_status 2
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb:   Endpoint: 1, IN
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb:   Data buffer length: 13
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=1, ep_dir=80, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26ad600)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000020
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(5) to 00c88a00
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 5
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 1
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 00080200 to HCTSIZ(5)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 5
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(5)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(5)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000020
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 5
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 5 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 5 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 5 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=13
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: IN, channel 5
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 499
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 13
+<7>dwc2 9000000.usb:   urb->actual_length 13
+<7>dwc2 9000000.usb:   short_read 1, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 1-IN status 0 actual 13
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: dwc2_halt_channel()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 5, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26ad600,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 10
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(10)
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: HAINT=00000400
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 10 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 10
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1e21180 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 10, halt_status 2
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 1, IN
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 13
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=1, ep_dir=80, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26ad600)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 0008001f to HCTSIZ(12)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 12
+<7>dwc2 9000000.usb: 	 Xfer Size: 31
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(12)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(12)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00001000
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 12
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 12 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 12 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 12 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 12
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   hctsiz.xfersize 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   urb->actual_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 2-OUT status 0 actual 31
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 12, halt_status 2
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1e21100
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c1a0b000, Transfer DMA: 41a0b000
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00002000
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(13) to 00c81200
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 13
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(13)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 13
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 41a0b000 to HCDMA(13)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(13)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00002000
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 13
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 13 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 13 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 13 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=512
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 13
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1e21100 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 13, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb:   Endpoint: 1, IN
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 13
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=1, ep_dir=80, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26ad600)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00004000
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(14) to 00c88a00
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 14
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 1
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(14)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 14
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(14)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(14)
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 0008001f to HCTSIZ(15)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 15
+<7>dwc2 9000000.usb: 	 Xfer Size: 31
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(15)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(15)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00008000
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 15
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 15 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 15 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 15 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 15
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   hctsiz.xfersize 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   urb->actual_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 2-OUT status 0 actual 31
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 15, halt_status 2
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1e21080
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c1a03000, Transfer DMA: 41a03000
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000001
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(0) to 00c81200
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 0
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(0)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 0
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 41a03000 to HCDMA(0)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(0)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000001
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 0
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 0 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 0 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 0 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=512
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 0
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 512
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 512
+<7>dwc2 9000000.usb:   urb->actual_length 512
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1e21080 device 3 ep 2-OUT status 0 actual 512
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 0, halt_status 2
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 1, IN
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 13
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=1, ep_dir=80, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26ad600)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000002
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(1) to 00c88a00
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 1
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 1
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 00080200 to HCTSIZ(1)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 1
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(1)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(1)
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 0008001f to HCTSIZ(5)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 5
+<7>dwc2 9000000.usb: 	 Xfer Size: 31
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(5)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(5)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000020
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 5
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 5 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 5 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 5 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 5
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   hctsiz.xfersize 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   urb->actual_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 2-OUT status 0 actual 31
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 5, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: urb_enqueue, urb c1e21880
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c10b1000, Transfer DMA: 410b1000
+<7>dwc2 9000000.usb:   Setup buffer:   (null), Setup DMA: 00000000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000040
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(6) to 00c81200
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 6
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(6)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 6
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: Wrote 410b1000 to HCDMA(6)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(6)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Data buffer length: 13
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HAINTMSK to 00000080
+<7>dwc2 9000000.usb: set HCCHAR(7) to 00c88a00
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Is In: 1
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 7
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(7)
+<7>dwc2 9000000.usb: Wrote 80d88a00 to HCCHAR(7)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000002
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(1) to 00c81200
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 1
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 0008001f to HCTSIZ(1)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 1
+<7>dwc2 9000000.usb: 	 Xfer Size: 31
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(1)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(1)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000002
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 1
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 1 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 1 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 1 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 1
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   hctsiz.xfersize 31
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 31
+<7>dwc2 9000000.usb:   urb->actual_length 31
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 2-OUT status 0 actual 31
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 1, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26adde0,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: Wrote 0008001f to HCTSIZ(4)
+<7>dwc2 9000000.usb: 	 Xfer Size: 31
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: HAINT=00000010
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 4 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 4
+<7>dwc2 9000000.usb:   hctsiz.xfersize 31
+<7>dwc2 9000000.usb:   urb->actual_length 31
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 2-OUT status 0 actual 31
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 4, halt_status 2
+<7>dwc2 9000000.usb: urb_enqueue, urb c1e21080
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Transfer buffer: c1a07000, Transfer DMA: 41a07000
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HAINTMSK to 00000020
+<7>dwc2 9000000.usb: set HCCHAR(5) to 00c81200
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 5
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: Wrote 41a07000 to HCDMA(5)
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(5)
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 5
+<7>dwc2 9000000.usb: --Host Channel 5 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 5 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=512
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 512
+<7>dwc2 9000000.usb:   short_read 0, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 5, halt_status 2
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb:   Endpoint type: BULK IN (IN)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Data buffer length: 13
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb: addr=3, ep_num=1, ep_dir=80, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26ad600)
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 6
+<7>dwc2 9000000.usb: 	 Ep Num: 1
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: Wrote 40080200 to HCTSIZ(6)
+<7>dwc2 9000000.usb: 	 Xfer Size: 512
+<7>dwc2 9000000.usb: 	 Start PID: 2
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000040
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 6
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 6 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 6 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 6 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=13
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: IN, channel 6
+<7>dwc2 9000000.usb:   chan->xfer_len 512
+<7>dwc2 9000000.usb:   hctsiz.xfersize 499
+<7>dwc2 9000000.usb:   urb->transfer_buffer_length 13
+<7>dwc2 9000000.usb:   urb->actual_length 13
+<7>dwc2 9000000.usb:   short_read 1, xfer_done 1
+<7>dwc2 9000000.usb: dwc2_host_complete: urb c1a00900 device 3 ep 1-IN status 0 actual 13
+<7>dwc2 9000000.usb: dwc2_complete_non_periodic_xfer()
+<7>dwc2 9000000.usb: dwc2_halt_channel()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb:   dwc2_release_channel: channel 6, halt_status 2
+<7>dwc2 9000000.usb:   dwc2_deactivate_qh(c416cc10,c26ad600,1)
+<7>dwc2 9000000.usb: dwc2_hcd_qh_deactivate()
+<7>dwc2 9000000.usb: dwc2_hcd_qh_unlink()
+<7>dwc2 9000000.usb: DWC OTG HCD Finished Servicing Interrupts
+<7>dwc2 9000000.usb: DWC OTG HCD gintsts=0x04400029 gintmsk=0xf3000006
+<7>dwc2 9000000.usb: DWC OTG HCD URB Enqueue
+<7>dwc2 9000000.usb: urb_enqueue, urb c1a00900
+<7>dwc2 9000000.usb:   Device address: 3
+<7>dwc2 9000000.usb:   Endpoint: 2, OUT
+<7>dwc2 9000000.usb:   Endpoint type: BULK OUT (OUT)
+<7>dwc2 9000000.usb:   Speed: HIGH
+<7>dwc2 9000000.usb:   Max packet size: 512
+<7>dwc2 9000000.usb:   Data buffer length: 31
+<7>dwc2 9000000.usb:   Transfer buffer: c1e41000, Transfer DMA: 41e41000
+<7>dwc2 9000000.usb:   Setup buffer: c1e2fe20, Setup DMA: 41e2fe20
+<7>dwc2 9000000.usb:   Interval: 0
+<7>dwc2 9000000.usb: addr=3, ep_num=2, ep_dir=0, ep_type=2, mps=512
+<7>dwc2 9000000.usb: dwc2_hcd_qh_add()
+<7>dwc2 9000000.usb: dwc2_assign_and_init_hc(c416cc10,c26adde0)
+<7>dwc2 9000000.usb: dwc2_hc_init()
+<7>dwc2 9000000.usb: DMA enabled
+<7>dwc2 9000000.usb: desc DMA disabled
+<7>dwc2 9000000.usb: set HCINTMSK to 00000006
+<7>dwc2 9000000.usb: set HAINTMSK to 00000080
+<7>dwc2 9000000.usb: set GINTMSK to f3000006
+<7>dwc2 9000000.usb: set HCCHAR(7) to 00c81200
+<7>dwc2 9000000.usb: dwc2_hc_init: Channel 7
+<7>dwc2 9000000.usb: 	 Dev Addr: 3
+<7>dwc2 9000000.usb: 	 Ep Num: 2
+<7>dwc2 9000000.usb: 	 Is In: 0
+<7>dwc2 9000000.usb: 	 Is Low Speed: 0
+<7>dwc2 9000000.usb: 	 Ep Type: 2
+<7>dwc2 9000000.usb: 	 Max Pkt: 512
+<7>dwc2 9000000.usb: Queue non-periodic transactions
+<7>dwc2 9000000.usb:   NP Tx Req Queue Space Avail (before queue): 8
+<7>dwc2 9000000.usb:   NP Tx FIFO Space Avail (before queue): 768
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer()
+<7>dwc2 9000000.usb: no split
+<7>dwc2 9000000.usb: Wrote 0008001f to HCTSIZ(7)
+<7>dwc2 9000000.usb: dwc2_hc_start_transfer: Channel 7
+<7>dwc2 9000000.usb: 	 Xfer Size: 31
+<7>dwc2 9000000.usb: 	 Num Pkts: 1
+<7>dwc2 9000000.usb: 	 Start PID: 0
+<7>dwc2 9000000.usb: Wrote 41e41000 to HCDMA(7)
+<7>dwc2 9000000.usb: 	 Multi Cnt: 1
+<7>dwc2 9000000.usb: Wrote 80d81200 to HCCHAR(7)
+<7>dwc2 9000000.usb: DWC OTG HCD Interrupt Detected gintsts&gintmsk=0x02000000
+<7>dwc2 9000000.usb: dwc2_hc_intr()
+<7>dwc2 9000000.usb: HAINT=00000080
+<7>dwc2 9000000.usb: --Host Channel Interrupt--, Channel 7
+<7>dwc2 9000000.usb:   hcint 0x00000023, hcintmsk 0x00000006, hcint&hcintmsk 0x00000002
+<7>dwc2 9000000.usb: --Host Channel 7 Interrupt: Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 7 Interrupt: DMA Channel Halted--
+<7>dwc2 9000000.usb: --Host Channel 7 Interrupt: Transfer Complete--
+<7>dwc2 9000000.usb:   Bulk transfer complete
+<7>dwc2 9000000.usb: urb->actual_length=0 xfer_length=31
+<7>dwc2 9000000.usb: DWC_otg: dwc2_update_urb_state: OUT, channel 7
+<7>dwc2 9000000.usb:   chan->xfer_len 31
+<7>dwc2 9000000.usb:   hctsiz.xfersize 31

@@ -1,0 +1,177 @@
+00008000-0026d000 r-xp 00000000 1f:0a 34         /bin/cspd
+00274000-00277000 r--p 00264000 1f:0a 34         /bin/cspd
+00277000-0029b000 rw-p 00267000 1f:0a 34         /bin/cspd
+0029b000-00368000 rw-p 00000000 00:00 0          [heap]
+60000000-60200000 rw-s 00000000 00:05 65538      /SYSV0000ffff (deleted)
+68000000-68020000 rw-s 00000000 00:05 32769      /SYSV0000abab (deleted)
+adfad000-ae02e000 rw-p 00000000 00:00 0 
+ae02e000-ae02f000 ---p 00000000 00:00 0 
+ae02f000-ae82e000 rw-p 00000000 00:00 0 
+ae82e000-ae82f000 ---p 00000000 00:00 0 
+ae82f000-af02e000 rw-p 00000000 00:00 0 
+af02e000-af02f000 ---p 00000000 00:00 0 
+af02f000-af82e000 rw-p 00000000 00:00 0 
+af82e000-af82f000 ---p 00000000 00:00 0 
+af82f000-b002e000 rw-p 00000000 00:00 0 
+b002e000-b002f000 ---p 00000000 00:00 0 
+b002f000-b082e000 rw-p 00000000 00:00 0 
+b082e000-b082f000 ---p 00000000 00:00 0 
+b082f000-b102e000 rw-p 00000000 00:00 0 
+b102e000-b102f000 ---p 00000000 00:00 0 
+b102f000-b182e000 rw-p 00000000 00:00 0 
+b182e000-b182f000 ---p 00000000 00:00 0 
+b182f000-b202e000 rw-p 00000000 00:00 0 
+b202e000-b202f000 ---p 00000000 00:00 0 
+b202f000-b282e000 rw-p 00000000 00:00 0          [stack]
+b282e000-b282f000 ---p 00000000 00:00 0 
+b282f000-b302e000 rw-p 00000000 00:00 0 
+b302e000-b302f000 ---p 00000000 00:00 0 
+b302f000-b382e000 rw-p 00000000 00:00 0 
+b382e000-b382f000 ---p 00000000 00:00 0 
+b382f000-b402e000 rw-p 00000000 00:00 0 
+b402e000-b402f000 ---p 00000000 00:00 0 
+b402f000-b482e000 rw-p 00000000 00:00 0 
+b482e000-b482f000 ---p 00000000 00:00 0 
+b482f000-b502e000 rw-p 00000000 00:00 0 
+b502e000-b502f000 ---p 00000000 00:00 0 
+b502f000-b582e000 rw-p 00000000 00:00 0 
+b582e000-b582f000 ---p 00000000 00:00 0 
+b582f000-b602e000 rw-p 00000000 00:00 0 
+b602e000-b602f000 ---p 00000000 00:00 0 
+b602f000-b682e000 rw-p 00000000 00:00 0 
+b682e000-b68a2000 rw-s 46680000 1f:0a 149        /dev/mem
+b68a2000-b68a5000 r-xp 00000000 1f:0a 2145       /lib/librt-0.9.33.2.so
+b68a5000-b68ac000 ---p 00000000 00:00 0 
+b68ac000-b68ad000 r--p 00002000 1f:0a 2145       /lib/librt-0.9.33.2.so
+b68ad000-b68ae000 rw-p 00003000 1f:0a 2145       /lib/librt-0.9.33.2.so
+b68ae000-b6944000 r-xp 00000000 1f:0a 2154       /lib/libuClibc-0.9.33.2.so
+b6944000-b694b000 ---p 00000000 00:00 0 
+b694b000-b694c000 r--p 00095000 1f:0a 2154       /lib/libuClibc-0.9.33.2.so
+b694c000-b694d000 rw-p 00096000 1f:0a 2154       /lib/libuClibc-0.9.33.2.so
+b694d000-b6952000 rw-p 00000000 00:00 0 
+b6952000-b695d000 r-xp 00000000 1f:0a 2126       /lib/libkv.so
+b695d000-b6965000 ---p 00000000 00:00 0 
+b6965000-b6966000 r--p 0000b000 1f:0a 2126       /lib/libkv.so
+b6966000-b6967000 rw-p 0000c000 1f:0a 2126       /lib/libkv.so
+b6967000-b696d000 r-xp 00000000 1f:0a 2148       /lib/libsimcarduserapi.so
+b696d000-b6975000 ---p 00000000 00:00 0 
+b6975000-b6976000 r--p 00006000 1f:0a 2148       /lib/libsimcarduserapi.so
+b6976000-b6977000 rw-p 00007000 1f:0a 2148       /lib/libsimcarduserapi.so
+b6977000-b6978000 r-xp 00000000 1f:0a 2142       /lib/librelayuserapi.so
+b6978000-b697f000 ---p 00000000 00:00 0 
+b697f000-b6980000 r--p 00000000 1f:0a 2142       /lib/librelayuserapi.so
+b6980000-b6981000 rw-p 00001000 1f:0a 2142       /lib/librelayuserapi.so
+b6981000-b6982000 r-xp 00000000 1f:0a 2151       /lib/libsysinfoapi.so
+b6982000-b6989000 ---p 00000000 00:00 0 
+b6989000-b698a000 r--p 00000000 1f:0a 2151       /lib/libsysinfoapi.so
+b698a000-b698b000 rw-p 00001000 1f:0a 2151       /lib/libsysinfoapi.so
+b698b000-b6994000 r-xp 00000000 1f:0a 2104       /lib/libdbcspview.so
+b6994000-b699b000 ---p 00000000 00:00 0 
+b699b000-b699c000 r--p 00008000 1f:0a 2104       /lib/libdbcspview.so
+b699c000-b699d000 rw-p 00009000 1f:0a 2104       /lib/libdbcspview.so
+b699d000-b699f000 r-xp 00000000 1f:0a 2155       /lib/libunl.so
+b699f000-b69a6000 ---p 00000000 00:00 0 
+b69a6000-b69a7000 r--p 00001000 1f:0a 2155       /lib/libunl.so
+b69a7000-b69a8000 rw-p 00002000 1f:0a 2155       /lib/libunl.so
+b69a8000-b69d7000 r-xp 00000000 1f:0a 2138       /lib/libpdtcmapi.so
+b69d7000-b69de000 ---p 00000000 00:00 0 
+b69de000-b69df000 r--p 0002e000 1f:0a 2138       /lib/libpdtcmapi.so
+b69df000-b69e0000 rw-p 0002f000 1f:0a 2138       /lib/libpdtcmapi.so
+b69e0000-b69e1000 rw-p 00000000 00:00 0 
+b69e1000-b6a04000 r-xp 00000000 1f:0a 2098       /lib/libctype.so
+b6a04000-b6a0c000 ---p 00000000 00:00 0 
+b6a0c000-b6a0d000 r--p 00023000 1f:0a 2098       /lib/libctype.so
+b6a0d000-b6a1a000 rw-p 00024000 1f:0a 2098       /lib/libctype.so
+b6a1a000-b6b92000 r-xp 00000000 1f:0a 2090       /lib/libcmapi.so
+b6b92000-b6b99000 ---p 00000000 00:00 0 
+b6b99000-b6b9b000 r--p 00177000 1f:0a 2090       /lib/libcmapi.so
+b6b9b000-b6ba0000 rw-p 00179000 1f:0a 2090       /lib/libcmapi.so
+b6ba0000-b6baa000 rw-p 00000000 00:00 0 
+b6baa000-b6bac000 r-xp 00000000 1f:0a 2107       /lib/libenv.so
+b6bac000-b6bb3000 ---p 00000000 00:00 0 
+b6bb3000-b6bb4000 r--p 00001000 1f:0a 2107       /lib/libenv.so
+b6bb4000-b6bb5000 rw-p 00002000 1f:0a 2107       /lib/libenv.so
+b6bb5000-b6bb8000 r-xp 00000000 1f:0a 2152       /lib/libtagparamuserapi.so
+b6bb8000-b6bbf000 ---p 00000000 00:00 0 
+b6bbf000-b6bc0000 r--p 00002000 1f:0a 2152       /lib/libtagparamuserapi.so
+b6bc0000-b6bc1000 rw-p 00003000 1f:0a 2152       /lib/libtagparamuserapi.so
+b6bc1000-b6c0c000 r-xp 00000000 1f:0a 2089       /lib/libcfapi.so
+b6c0c000-b6c13000 ---p 00000000 00:00 0 
+b6c13000-b6c14000 r--p 0004a000 1f:0a 2089       /lib/libcfapi.so
+b6c14000-b6c1a000 rw-p 0004b000 1f:0a 2089       /lib/libcfapi.so
+b6c1a000-b6c1b000 r-xp 00000000 1f:0a 2125       /lib/libkeyuserapi.so
+b6c1b000-b6c22000 ---p 00000000 00:00 0 
+b6c22000-b6c23000 r--p 00000000 1f:0a 2125       /lib/libkeyuserapi.so
+b6c23000-b6c24000 rw-p 00001000 1f:0a 2125       /lib/libkeyuserapi.so
+b6c24000-b6c25000 r-xp 00000000 1f:0a 2128       /lib/libleduserapi.so
+b6c25000-b6c2c000 ---p 00000000 00:00 0 
+b6c2c000-b6c2d000 r--p 00000000 1f:0a 2128       /lib/libleduserapi.so
+b6c2d000-b6c2e000 rw-p 00001000 1f:0a 2128       /lib/libleduserapi.so
+b6c2e000-b6c3f000 r-xp 00000000 1f:0a 2103       /lib/libdb.so
+b6c3f000-b6c46000 ---p 00000000 00:00 0 
+b6c46000-b6c47000 r--p 00010000 1f:0a 2103       /lib/libdb.so
+b6c47000-b6c48000 rw-p 00011000 1f:0a 2103       /lib/libdb.so
+b6c48000-b6c49000 r-xp 00000000 1f:0a 2147       /lib/libsha256.so
+b6c49000-b6c50000 ---p 00000000 00:00 0 
+b6c50000-b6c51000 r--p 00000000 1f:0a 2147       /lib/libsha256.so
+b6c51000-b6c52000 rw-p 00001000 1f:0a 2147       /lib/libsha256.so
+b6c52000-b6d83000 r-xp 00000000 1f:0a 2096       /lib/libcrypto.so.1.0.0
+b6d83000-b6d8b000 ---p 00000000 00:00 0 
+b6d8b000-b6d98000 r--p 00131000 1f:0a 2096       /lib/libcrypto.so.1.0.0
+b6d98000-b6d9d000 rw-p 0013e000 1f:0a 2096       /lib/libcrypto.so.1.0.0
+b6d9d000-b6d9f000 rw-p 00000000 00:00 0 
+b6d9f000-b6deb000 r-xp 00000000 1f:0a 2150       /lib/libssl.so.1.0.0
+b6deb000-b6df2000 ---p 00000000 00:00 0 
+b6df2000-b6df5000 r--p 0004b000 1f:0a 2150       /lib/libssl.so.1.0.0
+b6df5000-b6df7000 rw-p 0004e000 1f:0a 2150       /lib/libssl.so.1.0.0
+b6df7000-b6df8000 rw-p 00000000 00:00 0 
+b6df8000-b6dfa000 r-xp 00000000 1f:0a 2119       /lib/libhardcode.so
+b6dfa000-b6e01000 ---p 00000000 00:00 0 
+b6e01000-b6e02000 r--p 00001000 1f:0a 2119       /lib/libhardcode.so
+b6e02000-b6e03000 rw-p 00002000 1f:0a 2119       /lib/libhardcode.so
+b6e03000-b6e04000 r-xp 00000000 1f:0a 2097       /lib/libcsputil.so
+b6e04000-b6e0b000 ---p 00000000 00:00 0 
+b6e0b000-b6e0c000 r--p 00000000 1f:0a 2097       /lib/libcsputil.so
+b6e0c000-b6e0d000 rw-p 00001000 1f:0a 2097       /lib/libcsputil.so
+b6e0d000-b6e43000 r-xp 00000000 1f:0a 2108       /lib/libevent.so
+b6e43000-b6e4a000 ---p 00000000 00:00 0 
+b6e4a000-b6e4b000 r--p 00035000 1f:0a 2108       /lib/libevent.so
+b6e4b000-b6e4c000 rw-p 00036000 1f:0a 2108       /lib/libevent.so
+b6e4c000-b6e4f000 r-xp 00000000 1f:0a 2105       /lib/libdl-0.9.33.2.so
+b6e4f000-b6e56000 ---p 00000000 00:00 0 
+b6e56000-b6e57000 r--p 00002000 1f:0a 2105       /lib/libdl-0.9.33.2.so
+b6e57000-b6e58000 rw-p 00003000 1f:0a 2105       /lib/libdl-0.9.33.2.so
+b6e58000-b6e68000 r-xp 00000000 1f:0a 2140       /lib/libpthread-0.9.33.2.so
+b6e68000-b6e6f000 ---p 00000000 00:00 0 
+b6e6f000-b6e70000 r--p 0000f000 1f:0a 2140       /lib/libpthread-0.9.33.2.so
+b6e70000-b6e71000 rw-p 00010000 1f:0a 2140       /lib/libpthread-0.9.33.2.so
+b6e71000-b6e73000 rw-p 00000000 00:00 0 
+b6e73000-b6e96000 r-xp 00000000 1f:0a 2136       /lib/liboss.so
+b6e96000-b6e9e000 ---p 00000000 00:00 0 
+b6e9e000-b6e9f000 r--p 00023000 1f:0a 2136       /lib/liboss.so
+b6e9f000-b6ea0000 rw-p 00024000 1f:0a 2136       /lib/liboss.so
+b6ea0000-b6ea1000 rw-p 00000000 00:00 0 
+b6ea1000-b6eaf000 r-xp 00000000 1f:0a 2130       /lib/libm-0.9.33.2.so
+b6eaf000-b6eb6000 ---p 00000000 00:00 0 
+b6eb6000-b6eb7000 r--p 0000d000 1f:0a 2130       /lib/libm-0.9.33.2.so
+b6eb7000-b6eb8000 rw-p 0000e000 1f:0a 2130       /lib/libm-0.9.33.2.so
+b6eb8000-b6ed5000 r-xp 00000000 1f:0a 2112       /lib/libgcc_s.so.1
+b6ed5000-b6edd000 ---p 00000000 00:00 0 
+b6edd000-b6ede000 rw-p 0001d000 1f:0a 2112       /lib/libgcc_s.so.1
+b6ede000-b6ef7000 r-xp 00000000 1f:0a 2092       /lib/libcommfun.so
+b6ef7000-b6efe000 ---p 00000000 00:00 0 
+b6efe000-b6eff000 r--p 00018000 1f:0a 2092       /lib/libcommfun.so
+b6eff000-b6f00000 rw-p 00019000 1f:0a 2092       /lib/libcommfun.so
+b6f00000-b6f01000 rw-p 00000000 00:00 0 
+b6f01000-b6f10000 r-xp 00000000 1f:0a 2159       /lib/libwwan.so
+b6f10000-b6f17000 ---p 00000000 00:00 0 
+b6f17000-b6f18000 r--p 0000e000 1f:0a 2159       /lib/libwwan.so
+b6f18000-b6f19000 rw-p 0000f000 1f:0a 2159       /lib/libwwan.so
+b6f19000-b6f1d000 rw-p 00000000 00:00 0 
+b6f1d000-b6f23000 r-xp 00000000 1f:0a 2079       /lib/ld-uClibc-0.9.33.2.so
+b6f26000-b6f2a000 rw-p 00000000 00:00 0 
+b6f2a000-b6f2b000 r--p 00005000 1f:0a 2079       /lib/ld-uClibc-0.9.33.2.so
+b6f2b000-b6f2c000 rw-p 00006000 1f:0a 2079       /lib/ld-uClibc-0.9.33.2.so
+bef70000-bef91000 rw-p 00000000 00:00 0 
+befbc000-befbd000 r-xp 00000000 00:00 0          [sigpage]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]

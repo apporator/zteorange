@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "======================================================"
+echo "mounting /dev/mtdblock3 to /tagparam, wait ..."
+    ( /bin/mount -n -t jffs2 /dev/mtdblock3 /tagparam ) ||   echo "  Mount failed" 
+echo "======================================================"     

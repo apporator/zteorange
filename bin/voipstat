@@ -1,0 +1,30 @@
+#!/bin/sh
+
+## voip task name
+m1=voip_root
+m2=voip
+m3=BoardControl
+m4=BCC
+m5=RCA
+m6=VoipDspRoot
+m7=SLCCONTROL
+m8=SLCREPORT
+m9=VoipH248CA
+m10=VoipH248TTM
+m11=webd_task
+m12=tr069_task
+m13=commtask
+m14=TimerTask
+m15=oamtask
+
+## 
+val=`ps | sed -n -e '/voip/p' |grep -E "\[$m1\]|\[$m2\]|\[$m3\]|\[$m4\]|\[$m5\]|\[$m6\]|\[$m7\]|\[$m8\]|\[$m9\]|\[$m10\]|\[$m11\]|\[$m12\]|\[$m13\]|\[$m14\]|\[$m15\]" -c`
+
+#echo val:$val
+ 
+if [ $val = 15 ]
+then 
+echo voip start ok
+else
+echo voip start error
+fi

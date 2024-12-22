@@ -1,0 +1,5 @@
+#! /bin/sh
+
+# usage:npu 0/1 (off/on npu)
+
+echo npu $1 > /proc/zte/sys/ffe/cmd

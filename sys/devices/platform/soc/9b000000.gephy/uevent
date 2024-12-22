@@ -1,0 +1,5 @@
+OF_NAME=gephy
+OF_FULLNAME=/soc/gephy@9b000000
+OF_COMPATIBLE_0=zte,zx279128-gephy
+OF_COMPATIBLE_N=1
+MODALIAS=of:NgephyT<NULL>Czte,zx279128-gephy

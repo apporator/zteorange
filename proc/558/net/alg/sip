@@ -1,0 +1,5 @@
+help:
+	a-port:add sip-port
+	d-port:delete sip-port
+sip-switch-info:
+	g_SipPower:1

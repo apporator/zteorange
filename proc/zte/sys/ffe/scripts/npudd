@@ -1,0 +1,5 @@
+#! /bin/sh
+
+# usage:npudd 0/1 (off/on npu drv debug info)
+
+echo npudd $1 > /proc/zte/sys/ffe/cmd

@@ -1,0 +1,5 @@
+OF_NAME=l2-cache-controller
+OF_FULLNAME=/soc/l2-cache-controller@0x00c00000
+OF_COMPATIBLE_0=arm,pl310-cache
+OF_COMPATIBLE_N=1
+MODALIAS=of:Nl2-cache-controllerT<NULL>Carm,pl310-cache

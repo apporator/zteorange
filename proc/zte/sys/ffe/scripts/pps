@@ -1,0 +1,5 @@
+#! /bin/sh
+
+# usage:pps cap_index layer type pps
+
+echo pps $1 $2 $3 $4 > /proc/zte/sys/ffe/cmd

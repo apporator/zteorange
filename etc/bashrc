@@ -1,0 +1,20 @@
+# /etc/bashrc
+
+# System wide functions and aliases
+# Environment stuff goes in /etc/profile
+
+# By default, we want this to get set.
+# Even for non-interactive, non-login shells.
+if [ $UID -gt 99 ] && [ "`id -gn`" = "`id -un`" ]; then
+	umask 002
+else
+	umask 022
+fi
+
+# are we an interactive shell?
+if [ $TERM = 'xterm' ]
+then
+	PS1="\[\033[02;32m\]\u@\h\[\033[02;34m\] \w \$\[\033[00m\] "
+else
+	PS1="\u@\h:\w\ # "
+fi
